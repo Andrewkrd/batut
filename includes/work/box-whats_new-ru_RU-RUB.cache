@@ -1,0 +1,6 @@
+a:24:{s:2:"id";s:4:"2071";s:9:"parent_id";s:1:"0";s:8:"quantity";s:1:"1";s:5:"price";s:9:"2390.0000";s:5:"model";s:4:"1233";s:12:"tax_class_id";s:1:"0";s:6:"weight";s:4:"0.00";s:15:"weight_class_id";s:1:"1";s:10:"date_added";s:19:"2012-01-24 12:51:37";s:16:"manufacturers_id";s:2:"23";s:12:"has_children";i:0;s:9:"available";s:1:"1";s:9:"master_id";i:2071;s:4:"name";s:96:"Велосипед двухколесный с опорными колесиками Spider 12''";s:11:"description";s:336:"<ul>
+<li>Велосипед двухколесный диаметр колес 12 дюймов;</li>
+<li>Опорные колесики;</li>
+<li>В комплект в ходит шлем, рюкзак, звонок;</li>
+<li>Крылья, багажник, полная защита цепи, мягкое седло.</li>
+</ul>";s:7:"keyword";s:32:"velosiped_dvuhkolesniy_spider-12";s:4:"tags";s:91:"Велосипед двухколесный с опорными колесиками Spider";s:3:"url";s:0:"";s:6:"images";a:2:{i:0;a:3:{s:2:"id";s:4:"2802";s:5:"image";s:31:"1327395097_Children_Bicycle.jpg";s:12:"default_flag";s:1:"1";}i:1;a:3:{s:2:"id";s:4:"2803";s:5:"image";s:21:"1327395152_g88150.jpg";s:12:"default_flag";s:1:"0";}}s:11:"category_id";i:219;s:10:"attributes";a:1:{s:13:"manufacturers";s:2:"23";}s:22:"reviews_average_rating";d:0;s:13:"display_price";s:11:"2,390.00р.";s:13:"display_image";s:31:"1327395097_Children_Bicycle.jpg";}

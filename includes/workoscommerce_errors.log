@@ -1,0 +1,10 @@
+[15-Mar-2012 22:32:50] PHP Warning:  [MYSQL] Unknown column 'redirect_dst' in 'field list' (1054): [QUERY] select redirect_src, redirect_dst from osc_redirect WHERE redirect_type=2 in C:\home\sites\shop_08_11\includes\classes\database.php on line 72
+[15-мар-2012 22:32:51] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\home\sites\shop_08_11\includes\classes\database.php:72) in Unknown on line 0
+[15-мар-2012 22:32:51] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\home\sites\shop_08_11\includes\classes\database.php:72) in Unknown on line 0
+[15-мар-2012 22:33:04] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\home\sites\shop_08_11\includes\application_top.php:95) in Unknown on line 0
+[15-мар-2012 22:33:04] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\home\sites\shop_08_11\includes\application_top.php:95) in Unknown on line 0
+[15-Mar-2012 22:36:59] PHP Warning:  [MYSQL] Unknown column 'redirect_dst' in 'field list' (1054): [QUERY] select redirect_src, redirect_dst from osc_redirect WHERE redirect_type=2 in C:\home\sites\shop_08_11\includes\classes\database.php on line 72
+[15-мар-2012 22:36:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\home\sites\shop_08_11\includes\classes\database.php:72) in Unknown on line 0
+[15-мар-2012 22:36:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\home\sites\shop_08_11\includes\classes\database.php:72) in Unknown on line 0
+[01-апр-2012 22:19:42] PHP Parse error:  parse error in C:\home\sites\shop_08_11\admin\includes\applications\products\classes\products.php on line 108
+[04-апр-2012 01:09:56] PHP Notice:  Undefined index:  customer_name in C:\home\sites\shop_08_11\includes\content\products\reviews.php on line 122

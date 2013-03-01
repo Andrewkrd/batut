@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Getting the Most Out - KissMT Dynamic SEO Meta Tags by FWR Media</title>
+<style type="text/css">
+body {
+  font-family: verdana, sans-serif;
+  font-size: 8pt;
+  margin: 0;
+  padding: 0;
+  background-color: #FCFCE8;
+}
+img { border: none; }
+h1 {
+  font-size: 16pt;
+  color: #00598E;
+}
+h2 {
+  font-size: 13pt;
+  color: #00598E;
+}
+h3 {
+  font-size: 11pt;
+  color: #00598E;
+}
+form {
+margin: 0;
+padding: 0;
+}
+input {
+margin: 0;
+padding: 0;
+}
+#container {
+  margin: 3em 6em 6em 6em;
+  border: 1px solid #ccc;
+}
+#inner_container {
+  margin: 0.1em;
+  padding: 1em;
+  background-color: #FFF;
+  position: relative;
+}
+#header {
+  background-color: #3898D3;
+  width: 100%;
+  height: 8em;
+}
+.error {
+  color: red;
+  padding: 0.5em;
+}
+.success {
+  color: green;
+  padding: 0.5em;
+}
+.messagesuccess {
+  border: 1px solid green;
+  color: green;
+  padding: 1em;
+  background-color: #ffffcc;
+}
+.messageerror {
+  border: 1px solid red;
+  color: red;
+  padding: 1em;
+  background-color: #FFE6E6;
+}
+.spacer {
+  padding: 0.5em;
+}
+#message_header {
+  color: #660000;
+  padding: 0.5em;
+  font-size: 14pt;
+  font-family: verdana;  
+}
+#fwrfooter a { 
+  position: absolute;
+  bottom: 0.3em;
+  padding-left: 2em;
+  text-decoration: none;
+  color: #00598E;
+}
+.smalltext {
+  font-size: 8pt;
+  font-family: tahoma, verdana;
+}
+#messages_container {
+  background-color: #fff;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+.dormant {
+  color: orange;
+  padding: 0.5em;
+  font-style: italic;
+}
+#fwrTitle1 {
+  color: #0073BA;
+  font-size: 28pt;
+}
+#fwrTitle2 {
+  color: #00598E;
+  font-size: 28pt;
+}
+code {
+  background-color: #E2F9E2;
+}
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <a href="http://www.fwrmedia.co.uk/" title="FWR Media"><img style="padding: 0.6em; float: right;" src="fwrlogo.png" width="73" height="73" alt="FWR Media" /></a>
+    <span style="padding: 0.5em 0.5em 0.5em 1.5em; position: relative;  top: 1.6em;"><span id="fwrTitle1">KissMT Dynamic SEO Meta Tags</span><span style="color: #fff; font-size: 10pt; font-weight: bold;"> version 1.0</span></span>
+  </div>
+  <div id="inner_container">
+    <h1>Getting the Most Out of KissMT Dynamic SEO Meta Tags Base Install</h1>
+    <h2>Settings</h2>
+    <p>catalog/includes/modules/kiss_meta_tags/includes/init.php</p>
+    <ul>
+      <li><b>KISSMT_CATEGORIES_PRODUCTS_LIMIT</b> - numeric - <i>the number of categories/products to pull from the database in order to provide a reasonable length description.</i></li>
+      <li><b>KISSMT_TITLE_SEPARATOR</b> - string - <i>the character that will separate the words in your browser title .. like my | website or my - website</i></li>
+      <li><b>KISS_MT_META_DESCRIPTION_LENGTH</b> - INT - <i>Limit the length of the meta description.</i></li>
+      <li><b>KISS_MT_META_KEYWORDS_NUMWORDS</b> - INT - <i>Limit the number of meta keywords.</i></li>
+      <li><b>KISS_MT_META_KEYWORD_SIZE</b> - INT - <i>Set the number of words in each generated keyword  (product).</i></li>  
+      <li><b>KISS_MT_META_TITLE_LIMIT_NUMWORDS</b> - INT - <i>Limit the product name length.</i></li>  
+      <li><b>KISS_MT_META_TITLE_NUMWORDS</b> - INT - <i>Limit the product name to X words in meta title if the above is true.</i></li>                  
+      <li><b>KISS_MT_META_TITLE_LENGTH</b> - INT - <i>Limit the overall meta title length</i></li>
+      <li><b>KISS_MT_PAGE_TITLE_LENGTH</b> - INT - <i>Limit the meta title to the nearest full word to X characters.</i></li> 
+      <li><b>KISSMT_XHTML_OUTPUT</b> - string - true/false - <i>is your site xhtml? set to true will output xhtml tags</i></li>
+      <li><b>KISSMT_PERFORMANCE_OUTPUT</b> - string true/false - <i>outputs KissMT performance data at the bottom of the page.</i></li>
+      <li><b>KISSMT_CLASS_OUTPUT</b> - string true/false - <i>outputs the properties of the KissMT class, as long as KISSMT_PERFORMANCE_OUTPUT is also set to true</i></li>
+      <li><b>KISSMT_CACHE_RESET</b> - string reset/false - <i>resets the cache on the next front end page load.</i> (Has to be set back to false manually)</li>
+      <li><b>KISSMT_CACHE_ON</b> - string true/false - <i>whether to cache the data or run queries.</i></li>
+      <li><b>KISSMT_CANONICAL_ON</b> - string true/false - <i>output canonical tags to remove duplicate search engine index entries and osCsid sessions</i></li>
+    </ul>
+    <h2>Database Keywords</h2>
+    <p>Keywords stored in the product description table for each product will take precedence over generated keywords.</p>    
+    <h2>I see text in the title but don't know how to change it</h2>
+    <p>You'll see text in the title like "Products by Some Manufacturer at My Shop"</p>
+    <p>These are set in the language files .. catalog/includes/languages/[my language]/kissmt.php</p>
+    <h3>What is the <b>%s</b></h3>
+    <p>In the language file the <b>%s</b> means that the code is going to replace it with some text. Play about with it .. if the text is "Buy securely online at %s" try changing it to "%s buy securely online.<br />Once you understand what it does it's very simple and flexible."</p> 
+    <h2>The main files have propper title/description/keywords but (some other file) doesn't .. how do I add it?</h2>
+    <p>You can add propper title/description/keywords to any file in the catalog/shop root directory very simply.</p>
+    <p>Look in the language file (kissmt.php) for KISSMT_PRIVACY_TITLE_TEXT.<br />
+       You should see that there are two entries related to privacy .. KISSMT_PRIVACY_TITLE_TEXT and KISSMT_PRIVACY_DESCRIPTION_TEXT. 
+    </p>
+    <p>If you ever want to add propper title/description/keywords to a new file you just have to create these two entries in the language file <i>(you obviously have to have replaced the title /title code with the KissMT code in the main file)</i> .. as an example ..</p>
+    <p>Let's say that you want to add this for a page called my_new_page.php. You would need to create the following two entries as defines in the language file .. </p>
+    <ul>
+      <li>KISSMT_MY_NEW_PAGE_TITLE_TEXT .. e.g. define( 'KISSMT_MY_NEW_PAGE_TITLE_TEXT', 'New - Page - Title' );</li>
+      <li>KISSMT_MY_NEW_PAGE_DESCRIPTION_TEXT .. e.g. define( 'KISSMT_MY_NEW_PAGE_DESCRIPTION_TEXT', 'This is my new page' );</li>
+    </ul>
+    <p>See how the capitalised MY_NEW_PAGE from my_new_page.php replaced PRIVACY?<br />
+       The script will automatically recognise this to create the title/description and will also create the keywords for you automatically. 
+    </p>
+    <h2>What are Stopwords</h2>
+    <h3>Text from <a href="http://www.seoglossary.com/article/120" title="seoglossary">http://www.seoglossary.com/article/120</a></h3>
+    <p>Certain words, such as "the," "a", "an," "of," and "with," are so common and meaningless that a search engine won't bother including them in their index, or database, of web page content. So in effect, the stop words on your web pages are ignored as if those words weren't on your pages in the first place. Including a lot of stop words in your title tag waters down the title tag's keyword density.</p>
+    <h3>Where are the stopwords?</h3>
+    <p>The stopwords can be found at catalog/includes/modules/kiss_meta_tags/stopwords/ and are named using your osCommerce language.<br />
+       e.g. The stopwords file for the english language is named .. english_stopwords.ini</p>
+    <p>You will find the language based stopwords in extras/stopwords. <b>Please ensure that the naming of the stopwords file matches your osCommerce language.</b></p>
+    <h3>My language is not English and there is no stopwords file available</h3>
+    <p>We will try to include the basic stopwords of the main European languages as best as we can, but they will all be limited.<br />
+      My suggestion is to search in your local language on Google for "seo stop words [mylanguage]" and "seo stopwords [my language]".<br />
+      If you look well enough there MUST be an seo company/organisation listing them .. when you find them you can create your own stopwords file, please forward these to me so others can benefit. 
+    </p>
+    <div><a href="http://forums.oscommerce.com/topic/364910-dynamic-meta-description-tag-generator/" title="PHP - MySQL - osCommerce by FWR Media">SUPPORT</a></div> 
+    <div>Modified by <a href="http://forums.oscommerce.com/index.php?showuser=250400" target="_blank">jalung</a><br></div> 
+
+    <div style="padding-bottom: 3em;">&nbsp;</div>
+    <div id="fwrfooter"><a href="http://www.fwrmedia.co.uk" title="PHP - MySQL - osCommerce by FWR Media"> ... another script by FWR Media</a></div>
+  </div>
+</div>
+</body>
+</html>

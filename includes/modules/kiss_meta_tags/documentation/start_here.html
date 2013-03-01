@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Start Here - KissMT Dynamic SEO Meta Tags by FWR Media</title>
+<style type="text/css">
+body {
+  font-family: verdana, sans-serif;
+  font-size: 8pt;
+  margin: 0;
+  padding: 0;
+  background-color: #FCFCE8;
+}
+img { border: none; }
+h1 {
+  font-size: 16pt;
+  color: #00598E;
+}
+h2 {
+  font-size: 13pt;
+  color: #00598E;
+}
+h3 {
+  font-size: 11pt;
+  text-decoration: underline;
+  color: #00598E;
+}
+form {
+margin: 0;
+padding: 0;
+}
+input {
+margin: 0;
+padding: 0;
+}
+#container {
+  margin: 3em 6em 6em 6em;
+  border: 1px solid #ccc;
+}
+#inner_container {
+  margin: 0.1em;
+  padding: 1em;
+  background-color: #FFF;
+  position: relative;
+}
+#header {
+  background-color: #3898D3;
+  width: 100%;
+  height: 8em;
+}
+.error {
+  color: red;
+  padding: 0.5em;
+}
+.success {
+  color: green;
+  padding: 0.5em;
+}
+.messagesuccess {
+  border: 1px solid green;
+  color: green;
+  padding: 1em;
+  background-color: #ffffcc;
+}
+.messageerror {
+  border: 1px solid red;
+  color: red;
+  padding: 1em;
+  background-color: #FFE6E6;
+}
+.spacer {
+  padding: 0.5em;
+}
+#message_header {
+  color: #660000;
+  padding: 0.5em;
+  font-size: 14pt;
+  font-family: verdana;  
+}
+#fwrfooter a { 
+  position: absolute;
+  bottom: 0.3em;
+  padding-left: 2em;
+  text-decoration: none;
+  color: #00598E;
+}
+.smalltext {
+  font-size: 8pt;
+  font-family: tahoma, verdana;
+}
+#messages_container {
+  background-color: #fff;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+.dormant {
+  color: orange;
+  padding: 0.5em;
+  font-style: italic;
+}
+#fwrTitle1 {
+  color: #0073BA;
+  font-size: 26pt;
+}
+#fwrTitle2 {
+  color: #00598E;
+  font-size: 28pt;
+}
+code {
+  background-color: #E2F9E2;
+}
+</style>
+<style>  
+     p {  
+       text-indent: 2.0em;  
+     }  
+   </style> 
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <a href="http://www.fwrmedia.co.uk/" title="FWR Media"><img style="padding: 0.6em; float: right;" src="fwrlogo.png" width="73" height="73" alt="FWR Media" /></a>
+    <span style="padding: 0.5em 0.5em 0.5em 1.5em; position: relative;  top: 1.6em;"><span id="fwrTitle1">KissMT Dynamic SEO Meta Tags</span><span style="color: #fff; font-size: 10pt; font-weight: bold;"> version 1.0</span></span>
+  </div>
+  <div id="inner_container">
+    <div style="padding: 0.5em;">
+      <h1>Installation</h1>
+      <p>Remove any previous meta tags contribution</p>
+      <h2>1 - Uploads </h2>
+      <p>Extract zip file and copy resulting folder to <b>catalog/includes/modules/</b></p>
+      <p><b>Ensure that the following directory is writeable</b> (0755 or 0777 dependent on server) <b>catalog/includes/modules/kiss_meta_tags/cache/</b></p>
+      <h2>2 - File modifications</h2>
+      <p>Perform the following three steps to your current template, the default is <b>catalog/templates/default.php</b></p>
+      <p>- Find ..</p>
+      <code><span style="color: #000000">
+      <span style="color: #007700">&lt;</span><span style="color: #0000BB">title</span><span style="color: #007700">&gt;&lt;?</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">STORE_NAME . ($osC_Template->hasPageTitle() ? ': ' . $osC_Template->getPageTitle() : '')</span><span style="color: #007700">;&nbsp;</span><span style="color: #0000BB">?&gt;</span>&lt;/title&gt;
+      </span>
+      </code>
+      <p>- Replace with ...</p>
+<code>      
+	&lt;?php<br />
+	// Begin Dynamic Meta Tag Code<br />
+	if (file_exists('includes/modules/kiss_meta_tags/kiss_meta_tags.php'))<br />
+	{<br />
+		&nbsp;&nbsp;include_once('includes/modules/kiss_meta_tags/kiss_meta_tags.php');<br />
+	}<br />
+	// End Dynamic Meta Tag Code<br /> 
+	?&gt<br />      
+</code>      
+      <p>- Find and remove ..</p> 
+<code>           
+  if ($osC_Template->hasPageTags()) {<br />
+    &nbsp;&nbsp;echo $osC_Template->getPageTags();<br />
+  }<br />
+</code> 
+
+      <p>- Find and remove ..</p> 
+<code>       
+&lt;meta name="Generator" content="osCommerce" /&gt<br />      
+</code>       
+
+      <h2>3 - Static Tags</h2>
+      <p>Make changes to <b>catalog/includes/modules/kiss_meta_tags/languages/(code)/kissmt.php</b> to suit your site.</p>
+
+      <p>You can add other .php files names to the  Static Tag "Generic Pages" using the same format if you wish.</p>
+
+      <div style="padding: 0.5em;"></div>
+      <div style="padding: 0.5em; border: 1px solid orange;"><p>Once you have completed the above <span style="font-style: italic; font-weight: bold;">KissMT is already producing complex SEO meta and canonical tags
+        on your site ... Go and check ..</span> view some categories/products and choose a manufacturer from the dropdown. View source to see the keywords and description.</p>
+      </div>
+      <h2>KISS means "Keep It Simple Stupid!"</h2>
+      <p>Did we keep it KISS? how long did it take you to install? Would you like to see more FWR Media KISS contributions? Let us know on the osCommerce forums.</p>
+      <h2 style="color: red;">Important Information</h2>
+      <p>KissMT has code in place to ensure that www.mysite.com/ and www.mysite.com/index.php is not duplicate content.<br />
+      The canonical version as standard is www.mysite.com/ ( recommended ) if you have .htaccess redirects to achieve this they can now be removed.<br />
+      If however you are using or would like to use www.mysite.com/index.php as the root canonical link you will need to adjust abstracts/kiss_modules.php protected $root_index ( near the top )</p>
+    </div>
+    <h2>What we recommend you do from here (in order of importance)</h2>
+    <ul>
+      <li>1) Get used to and try out the base install before going any further</li>
+      <li>2) Read - getting_the_most_out_of_the_base_install.html</li>
+
+    </ul>
+    
+    <div><a href="http://forums.oscommerce.com/topic/364910-dynamic-meta-description-tag-generator/" title="PHP - MySQL - osCommerce by FWR Media">SUPPORT</a></div> 
+    <div>Modified by <a href="http://forums.oscommerce.com/index.php?showuser=250400" target="_blank">jalung</a><br></div> 
+    <div style="padding: 1em;"></div>   
+    <div id="fwrfooter"><a href="http://www.fwrmedia.co.uk" title="PHP - MySQL - osCommerce by FWR Media"> ... another script by FWR Media</a></div>
+
+  </div>
+</div>
+</body>
+</html>

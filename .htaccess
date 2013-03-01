@@ -1,0 +1,62 @@
+# $Id$
+#
+# This is used with Apache WebServers
+#
+# For this to work, you must include the parameter 'Options' to
+# the AllowOverride configuration
+#
+# Example:
+#
+# <Directory "/usr/local/apache/htdocs">
+#   AllowOverride Options
+# </Directory>
+#
+# 'All' with also work. (This configuration is in the
+# apache/conf/httpd.conf file)
+
+# The following makes adjustments to the SSL protocol for Internet
+# Explorer browsers
+
+<IfModule mod_setenvif.c>
+  <IfDefine SSL>
+    SetEnvIf User-Agent ".*MSIE.*" \
+             nokeepalive ssl-unclean-shutdown \
+             downgrade-1.0 force-response-1.0
+  </IfDefine>
+</IfModule>
+
+# Fix certain PHP values
+# (commented out by default to prevent errors occuring on certain
+# servers)
+
+#<IfModule mod_php4.c>
+#  php_value session.use_trans_sid 0
+#  php_value magic_quotes_gpc 0
+#</IfModule>
+
+
+Options +FollowSymLinks
+RewriteEngine On
+
+## Begin - Rewrite rules to block out some common exploits.
+#RewriteCond %{QUERY_STRING} base64_encode[^(]*\([^)]*\) [OR]
+#RewriteCond %{QUERY_STRING} (<|%3C)([^s]*s)+cript.*(>|%3E) [NC,OR]
+#RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+#RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+#RewriteRule .* index.php [F]
+
+#RewriteCond %{REQUEST_URI} !^/index\.php
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^magazin  products.php [L]
+RewriteRule ^category  index.php [L]
+RewriteRule ^info/  info.php [L]
+RewriteRule ^articles/  cms.php [L]
+
+
+#RewriteRule .* index.php [L]
+
+
