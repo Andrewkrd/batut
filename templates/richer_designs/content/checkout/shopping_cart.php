@@ -90,7 +90,7 @@ if (!$osC_Customer->isLoggedOn()) {
 ?> 
 
  <div class="form form-small">
-  <form name="login" action="<?php echo osc_href_link(FILENAME_CHECKOUT, '?cart&unauth_order', 'SSL', false, false); ?>" method="post" class="form-horizontal">
+  <form name="login" action="<?php echo osc_href_link(FILENAME_ACCOUNT, '?unauth_order', 'SSL', false, false); ?>" method="post" class="form-horizontal">
     <h6 class="title">Быстрый заказ</h6>
 
     <p>Обязательными для заполнения являются все поля помеченные <em>*</em></p>

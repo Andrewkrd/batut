@@ -420,7 +420,7 @@
         }
       }
 
-    if ( false === $get_key ) {
+    if ( empty($get_key) ) {
         $link = osc_href_link( KissMT::init()->retrieve( 'basename' ), '', $request_type, false,null,true ) ;
      }
      else 
