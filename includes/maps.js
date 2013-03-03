@@ -1,3 +1,4 @@
+<script type="text/javascript">
 function fid_135179447786766516408(ymaps) {
     var map = new ymaps.Map("ymaps-map-id_135179447786766516408", {
         center: [39.029177444091786, 45.027891149811886],
@@ -15,3 +16,4 @@ function fid_135179447786766516408(ymaps) {
             preset: "twirl#orangeDotIcon"
         }));
 };
+</script>
