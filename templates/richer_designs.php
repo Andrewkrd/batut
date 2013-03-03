@@ -314,7 +314,7 @@
       <div class="span4">
         <div class="pbox rcolor">
           <div class="pcol-left">
-            <a href="items.html"><img src="img/photos/promo-1.png" alt="" /></a>
+            <a href="/category/malyie_batutyi"><img src="img/photos/promo-1.png" alt="" /></a>
           </div>
           <div class="pcol-right">
             <p class="pmed"><a href="/category/malyie_batutyi">Малые</a></p>
@@ -329,7 +329,7 @@
       <div class="span4">
         <div class="pbox bcolor">
           <div class="pcol-left">
-            <a href="/category/srednie_batutyi""><img src="img/photos/promo-2.png" alt="" /></a>
+            <a href="/category/srednie_batutyi"><img src="img/photos/promo-2.png" alt="" /></a>
           </div>
           <div class="pcol-right">
             <p class="pmed"><a href="/category/srednie_batutyi">Средние</a></p>
