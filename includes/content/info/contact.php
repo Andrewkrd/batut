@@ -29,7 +29,7 @@
 
       $this->_page_title = $osC_Language->get('info_contact_heading');
 
-      $this->addJavascriptFilename("http://api-maps.yandex.ru/1.1/index.xml?key=APsHGE4BAAAAUx9-QAIAOgUgJrorqiuPWp559-V7rj2auZsAAAAAAAAAAAC3YntD38aJAY4h0gxe5ybAk8b8PA==");
+      $this->addJavascriptFilename("http://api-maps.yandex.ru/1.1/index.xml?key=ALCnM1EBAAAACtBmXAIAXyINDkmlw6WOXbd2CCbtY89Tbj0AAAAAAAAAAADiXzNpAk1U_wQVW45dX5AFeEbd_g==");
       $this->addJavascriptPhpFilename("includes/maps.js");
       
       if ($osC_Services->isStarted('breadcrumb')) {

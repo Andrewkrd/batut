@@ -127,7 +127,7 @@
             </span>
 
               <!-- Login and Register link -->
-              <span class="lr"><?php if ($osC_Customer->isLoggedOn()) {?><a href="/account.php/logoff">выйти</a><?php }else{ ?><a href="/account.php/login">войти</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/account.php/create">зарегистрироваться</a><?php }?></span>
+              <span class="lr"><?php if ($osC_Customer->isLoggedOn()) {?><a href="/account.php?logoff">выйти</a><?php }else{ ?><a href="/account.php?login">войти</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/account.php/create">зарегистрироваться</a><?php }?></span>
           </div>
         </div>       
         

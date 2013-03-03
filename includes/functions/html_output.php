@@ -78,22 +78,22 @@
     
     
     if (!empty($parameters)) {
-      if(strpos($parameters, "cPath") !== false)
-      	$cPath = substr($parameters, strpos($parameters, "=")+1); //$link .= "!" .$parameters . "!";
-      else {
+     
       	if (strpos($parameters, "=") !== false && strpos($parameters, "?") === false)
       		$link .= "?" . osc_output_string($parameters);
+        elseif( strpos($link, "magazin") !== false || strpos($link, "category") !== false || strpos($link, "info") !== false)
+      		$link .= "/" . osc_output_string($parameters);        
       	elseif(strpos($parameters, "=") === false && strpos($parameters, "?") === false && strpos($parameters, "/") === false && strpos($link, "magazin") === false)
-      		$link .= "/" . osc_output_string($parameters);
+      		$link .= "?" . osc_output_string($parameters);
         else
         	$link .= osc_output_string($parameters);
-      }
+      
       $separator = '&';
     } else {
       $separator = '?';
     }
     
-	$link = str_replace("??", "?", $link);
+    $link = str_replace("??", "?", $link);
 
 
     while ( (substr($link, -1) == '&') || (substr($link, -1) == '?') ) {
