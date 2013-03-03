@@ -16,7 +16,7 @@
 	}
 	// End Dynamic Meta Tag Code
 	?>	
-	<link rel="shortcut icon" href="<?php echo osc_href_link(null, null, 'AUTO', false) . 'templates/' . $osC_Template->getCode() . '/images/favicon.ico'; ?>" />
+	<link rel="shortcut icon" href="<?php echo osc_href_link(null, null, 'AUTO', false) . 'favicon.ico'; ?>" />
 	<base href="<?php echo osc_href_link(null, null, 'AUTO', false); ?>" />
 
 
