@@ -121,7 +121,7 @@
         $Qlisting->bindRaw(':order_by', $this->_sort_by);
         $Qlisting->bindRaw(':order_by_direction', (($this->_sort_by_direction == '-') ? 'desc' : ''));
       } else {
-        $Qlisting->appendQuery('pd.products_name :order_by_direction');
+        $Qlisting->appendQuery('p.available :order_by_direction');
         $Qlisting->bindRaw(':order_by_direction', (($this->_sort_by_direction == '-') ? 'desc' : ''));
       }
 

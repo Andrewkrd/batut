@@ -187,7 +187,7 @@ if ( !empty($cat_text_top) ) {	?>
 		if(array_key_exists('PRODUCT_LIST_PRICE', $column_list))
 			$price = $osC_Product->getPriceFormatedList(true);
 			
-		if($osC_Product->getAvailable() == 0)
+		if($osC_Product->getAvailable() == 4)
 			echo '<p>' . $price . '<span class="label label-inverse pull-left">Отсутствует</span></p>';
 		elseif($osC_Product->getAvailable() == 1)
 			echo '<div>' . $price . '<span class="label label-success pull-left">В наличии</span></div>';

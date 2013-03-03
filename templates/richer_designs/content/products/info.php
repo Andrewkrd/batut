@@ -18,11 +18,11 @@
           <div class="row">
             <div class="span3">
             
-<?php if(in_array($osC_Product->getAvailable(), array(0,1,2,3))) { 
+<?php if(in_array($osC_Product->getAvailable(), array(1,2,3,4))) { 
 
 	$availability = "InStock";
 		
-	if($osC_Product->getAvailable() == 0) {
+	if($osC_Product->getAvailable() == 4) {
 		$avail = '<span class="label label-inverse">Отсутствует</span>';
 		$availability = "OutOfStock";
 	}

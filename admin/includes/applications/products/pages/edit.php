@@ -702,7 +702,7 @@ $(document).ready(function(){
       <legend><?php echo $osC_Language->get('access_product_attributes_title') ?></legend>
 
 <div><label for="available">Наличие</label>
-            <?php echo osc_draw_pull_down_menu('available', array(array('id' => '0', 'text' => 'отсутствует'),array('id' => '1', 'text' => 'в наличии'),array('id' => '2', 'text' => 'под заказ'),array('id' => '3', 'text' => 'под заказ, доставка 1 неделя')), (isset($osC_ObjectInfo) ? $osC_ObjectInfo->get('available') : '1'), 'id="available"'); ?></div>
+            <?php echo osc_draw_pull_down_menu('available', array(array('id' => '4', 'text' => 'отсутствует'),array('id' => '1', 'text' => 'в наличии'),array('id' => '2', 'text' => 'под заказ'),array('id' => '3', 'text' => 'под заказ, доставка 1 неделя')), (isset($osC_ObjectInfo) ? $osC_ObjectInfo->get('available') : '1'), 'id="available"'); ?></div>
 
 
       <table border="0" width="100%" cellspacing="0" cellpadding="2">

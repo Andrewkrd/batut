@@ -232,9 +232,10 @@
       $title = trim( rtrim( trim( $stripped ), KissMT::init()->retrieve( 'title_separator' ) ) );
       if ( strlen( trim( KISSMT_TITLE_PADDING ) ) > 0 && $title_padding) { // KISSMT_TITLE_PADDING can be left blank
       	if(defined("KISSMT_TITLE_HOME_PADDING"))
+            if(KISSMT_TITLE_HOME_PADDING !== "")
       		$title .= ' ' . KissMT::init()->retrieve( 'title_separator' ) . ' '  . sprintf( KISSMT_TITLE_HOME_PADDING, STORE_NAME );
       	else
-			$title .= ' ' . KissMT::init()->retrieve( 'title_separator' ) . ' ' . sprintf( KISSMT_TITLE_PADDING, STORE_NAME );
+		$title .= ' ' . KissMT::init()->retrieve( 'title_separator' ) . ' ' . sprintf( KISSMT_TITLE_PADDING, STORE_NAME );
       }
       elseif(strlen( trim( KISSMT_TITLE_PADDING ) ) > 0 && !$title_padding)
 		$title .= ' ' . KissMT::init()->retrieve( 'title_separator' ) . ' '  . 'Краснодар';
