@@ -76,7 +76,7 @@
 			}
 			$iii++;			
 		}
-
+      KissMT::init()->basename = substr($_SERVER["REQUEST_URI"], 1);
       KissMT::init()->setCanonical( $this->checkCanonical('',$link) );
       $this->parse( KissMT::init()->entities( $leading_value, $decode = true ), KissMT::init()->entities( $description, $decode = true ) );
     } // end method
