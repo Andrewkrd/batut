@@ -1,4 +1,8 @@
 User-agent: *
 Disallow: /css/
 Disallow: /js/
+Disallow: /admin/
+Disallow: /ext/
+Disallow: /includes/
+Disallow: /templates/
 Sitemap: http://batut-krasnodar.ru/sitemap.xml

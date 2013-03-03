@@ -1,0 +1,17 @@
+a:5:{i:0;a:5:{s:2:"id";s:4:"1141";s:12:"languages_id";s:1:"2";s:13:"content_group";s:5:"index";s:14:"definition_key";s:13:"index_heading";s:16:"definition_value";s:3:"%s!";}i:1;a:5:{s:2:"id";s:4:"1142";s:12:"languages_id";s:1:"2";s:13:"content_group";s:5:"index";s:14:"definition_key";s:10:"index_text";s:16:"definition_value";s:2118:"<div class="moduleBox">
+<div class="content">
+<h1 style="background: none;">Жирафик - детский интернет магазин в Краснодаре.</h1>
+<p style="line-height: 1.7;">
+В интернет-магазин детских товаров Жирафик можно найти много-много детской одежды, игрушек и не только. Известные производители, отменное качество, широкий выбор и все это по действительно низким ценам. Совершать покупки в нашем интернет-магазине не только удобно, но и выгодно. Скидки и уровень сервиса вас приятно удивят, все наши сотрудники  всегда вежливы и пунктуальны. Жирафик любит своих клиентов именно поэтому дарит <a href="info.php/view,1">скидки</a> всем покупателям.
+</p>
+<h2>Жирафик &mdash; это:</h2>
+<ul>
+<li><img src="templates/richer_designs/images/tick16.png" />&nbsp;&nbsp;Магазин и интернет-магазин в Краснодаре;</li>
+<li><img src="templates/richer_designs/images/tick16.png" />&nbsp;&nbsp;Доставка в день заказа (для заказов оформленных до 16:00);</li>
+<li><img src="templates/richer_designs/images/tick16.png" />&nbsp;&nbsp;Накопительная скидка с первой покупки;</li>
+<li><img src="templates/richer_designs/images/tick16.png" />&nbsp;&nbsp;Бесплатная доставка по Краснодару для заказов от 1500 рублей;</li>
+<li><img src="templates/richer_designs/images/tick16.png" />&nbsp;&nbsp;Оплата товара при получении наличными курьеру;</li>
+<li><img src="templates/richer_designs/images/tick16.png" />&nbsp;&nbsp;Действительно низкие цены каждый день!</li>
+</ul>
+</div>
+</div>";}i:2;a:5:{s:2:"id";s:4:"1155";s:12:"languages_id";s:1:"2";s:13:"content_group";s:5:"index";s:14:"definition_key";s:14:"greeting_guest";s:16:"definition_value";s:293:"<p style="line-height: 1.7;">Добро пожаловать! <a href="%s">Авторизируйтесь</a>, или ознакомьтесь с <a href="%s">новыми поступлениями товаров</a> с момента последнего Вашего посещения.</p>";}i:3;a:5:{s:2:"id";s:4:"1156";s:12:"languages_id";s:1:"2";s:13:"content_group";s:5:"index";s:14:"definition_key";s:17:"greeting_customer";s:16:"definition_value";s:236:"Мы рады снова приветствовать Вас %s! Ознакомьтесь с <a href="%s">новыми поступлениями товаров</a> с момента последнего Вашего посещения!";}i:4;N;}
