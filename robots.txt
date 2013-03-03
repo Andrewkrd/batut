@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Sitemap: http://batut-krasnodar.ru/sitemap.xml
