@@ -83,9 +83,9 @@
       	if (strpos($parameters, "=") !== false && strpos($parameters, "?") === false)
       		$link .= "?" . osc_output_string($parameters);
         elseif( strpos($link, "magazin") !== false || strpos($link, "category") !== false || strpos($link, "info") !== false)
-      		$link .=  osc_output_string($parameters);     
-      	elseif(strpos($parameters, "=") === false && strpos($parameters, "?") === false && strpos($parameters, "/") === false && strpos($link, "magazin") === false)
-      		$link .= "/" . osc_output_string($parameters);
+      		$link .= osc_output_string($parameters);     
+      	elseif(strpos($parameters, "=") === false && strpos($parameters, "?") === false && strpos($parameters, "/") === false)
+      		$link .= "?" . osc_output_string($parameters);
         else
         	$link .= osc_output_string($parameters);
       }
