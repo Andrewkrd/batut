@@ -181,10 +181,13 @@
       if (($pos = strrpos($group, '.')) !== false) {
         $group = substr($group, 0, $pos);
       }
-
-	  if (empty($_GET) === false && !isset($_GET['action'])) {
+      
+    if (empty($_GET) === false && !isset($_GET['action'])) {
         $first_array = array_slice($_GET, 0, 1);
         $module = osc_sanitize_string(basename(key($first_array)));
+
+        if($group == "search")
+            $module = "search"; 
 
         if (file_exists('includes/content/' . $group . '/' . $module . '.php')) {
           $module = $module;
@@ -212,6 +215,8 @@
       		$module = "cookie";
       	elseif(strpos($_SERVER["REQUEST_URI"], "info/zvonok")) 
       		$module = "zvonok";
+        elseif(strpos($_SERVER["REQUEST_URI"], "info/subscribe")) 
+      		$module = "subscribe";
       	elseif($_SERVER["REQUEST_URI"] == "/info/") 
       		$module = "info";
       	else

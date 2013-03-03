@@ -41,6 +41,11 @@
       $list_string_first ='';
       $metakeywords = '';   
       
+      if(strpos($_SERVER["REQUEST_URI"], "?") === false)
+        KissMT::init()->basename = substr($_SERVER["REQUEST_URI"], 1);
+      else
+        KissMT::init()->basename = substr($_SERVER["REQUEST_URI"], 1, strpos($_SERVER["REQUEST_URI"], "?"));
+
       switch ( true ) {
         /**
         * A nested category or category products listing query
@@ -67,7 +72,7 @@
         
           $this->cache_name = $this->setCacheString( __FILE__, 'cPath', $this->cache_suffix . (isset($_GET['sort'])?str_replace('|','_',$_GET['sort']) : '' ) . (isset($_GET['page'])?$_GET['page'] : '' ));
           if ( false !== $this->retrieve( $this->cache_name ) ) {
-            KissMT::init()->setCanonical( $this->checkCanonical('') );
+            KissMT::init()->setCanonical( $this->checkCanonical(''));
             return;
           } 
 
@@ -113,7 +118,7 @@
 		  if (!isset($leading_values)) {
 		  	  $leading_values_arr = array();
 		  	  $leading_values = "";
-		      $breadcrumb = array_flip( KissMT::init()->retrieve( 'breadcrumb' ) ); 
+		      $breadcrumb = array_flip( KissMT::init()->retrieve( 'breadcrumb' ) );
 		      //$leading_values = implode( '[-separator-]', KissMT::init()->retrieve( 'breadcrumb' ) );
 		      foreach ( KissMT::init()->retrieve( 'breadcrumb' ) as $val)
 		      	if(stripos ($leading_values, $val) === false) {
@@ -123,15 +128,17 @@
 		      $leading_values = implode( '[-separator-]', $leading_values_arr );
 		  }
 
-			$query = "SELECT categories_title FROM " . TABLE_CATEGORIES_DESCRIPTION . " WHERE categories_id = " . (int)$this->get_value . " AND language_id = " . (int)KissMT::init()->retrieve( 'languages_id' ) . "";
-			$result = $osC_Database->query(':sqlraw');
-			$result->bindRaw(':sqlraw',$query);
-			$result->execute();
-			$categories_title = $result->value('categories_title');
-			if(!empty($categories_title))	
-				$leading_values = $categories_title;   
+		$query = "SELECT categories_title, category_url  FROM " . TABLE_CATEGORIES_DESCRIPTION . " WHERE categories_id = " . (int)$this->get_value . " AND language_id = " . (int)KissMT::init()->retrieve( 'languages_id' ) . "";
+		$result = $osC_Database->query(':sqlraw');
+		$result->bindRaw(':sqlraw',$query);
+		$result->execute();
+		$categories_title = $result->value('categories_title');
+		if(!empty($categories_title))	
+                    $leading_values .= '[-separator-]' . $categories_title; 
+                
+                
 
-          KissMT::init()->setCanonical( $this->checkCanonical('') );
+          KissMT::init()->setCanonical( $this->checkCanonical(''));
           $this->parse( KissMT::init()->entities( $leading_values, $decode = true ), KissMT::init()->entities( $leading_values . ' в Краснодаре, ' . $list_string, $decode = true ),null,null,$list_string_first,$metakeywords);
           break;
         /**

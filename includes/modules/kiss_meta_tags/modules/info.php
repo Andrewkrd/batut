@@ -31,7 +31,7 @@
 		global $osC_Database;
 
 		// set basename to what it actually is and not the module file name
-		$base = new ArrayIterator( array( 'SCRIPT_NAME', 'PHP_SELF' ) );
+		/*$base = new ArrayIterator( array( 'SCRIPT_NAME', 'PHP_SELF' ) );
 		while ( $base->valid() ) {
 		if ( array_key_exists(  $base->current(), $_SERVER ) && !empty(  $_SERVER[$base->current()] ) ) {
 		  if ( false !== strpos( $_SERVER[$base->current()], '.php' ) ) {
@@ -43,8 +43,8 @@
 		  } 
 		}
 		$base->next();
-		}
-
+		}*/
+                KissMT::init()->basename = substr($_SERVER["REQUEST_URI"], 1);
 		$this->get_value = '';
 		$this->original_get = "";
 		$page_string = (isset($_GET['view'])?'view=' . $_GET['view'] : '' ) . (isset($_GET['page'])?'&page=' . $_GET['page'] : '' );		  	      

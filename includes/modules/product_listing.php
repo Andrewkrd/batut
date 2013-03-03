@@ -254,15 +254,15 @@ if ( !empty($cat_text_top) ) {	?>
 <?php
   if ( ($Qlisting->numberOfRows() > MAX_DISPLAY_SEARCH_RESULTS ) ||
        ((PREV_NEXT_BAR_LOCATION == '2') || (PREV_NEXT_BAR_LOCATION == '3')) ) {
-?>
 
 
-  <?php echo $Qlisting->getBatchPageLinks('page', osc_get_all_get_params(array('page', 'info', 'x', 'y'))); ?>
+    if($Qlisting->numberOfRows() > 0)
+        echo $Qlisting->getBatchPageLinks('page', osc_get_all_get_params(array('page', 'info', 'x', 'y'))); 
 
-  <?php //echo $Qlisting->getBatchTotalPages($osC_Language->get('result_set_number_of_products')); ?>
+   //echo $Qlisting->getBatchTotalPages($osC_Language->get('result_set_number_of_products')); 
 
 
-<?php
+
   }
 ?>
 

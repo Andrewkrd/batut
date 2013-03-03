@@ -418,33 +418,32 @@
           $it->next();
         }
       }
-      
+
     if ( false === $get_key ) {
         $link = osc_href_link( KissMT::init()->retrieve( 'basename' ), '', $request_type, false,null,true ) ;
      }
      else 
      	$link = osc_href_link( KissMT::init()->retrieve( 'basename' ), $get_key . $this->original_get . $additional, $request_type, false,null,true );
       
-    if(strpos( $link, "/page" ) !== false)
-		$link = substr( $link, 0 , strpos( $link, "/page" ));
+    if(strpos( $link, "?" ) !== false)
+		$link = substr( $link, 0 , strpos( $link, "?" ));
 		
-	if(strpos( $link, "/filter" ) !== false)
+   /*if(strpos( $link, "/filter" ) !== false)
 		$link = substr( $link, 0 , strpos( $link, "/filter" ));
 		
-	if(strpos( $link, "/sort" ) !== false)
+    if(strpos( $link, "/sort" ) !== false)
 		$link = substr( $link, 0 , strpos( $link, "/sort" ));
       
-
+*/
 	/*if(!apc_fetch("canonical: " . $link))
 		apc_add("canonical: " . $link . " FROM " . $_SERVER["REQUEST_URI"], "", 21600);	*/
-		
 		
       return $this->rootURL( $link );
 
     }
     
      protected function retrieve( $cachename ) {
-      
+
       $this->cache = $cachename;
       //$this->cache = KissMT::init()->retrieve( 'cache_path' ) . $cachename;
       if( apc_fetch( $this->cache ) && ( KISSMT_CACHE_ON == 'true')  ) {

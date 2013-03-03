@@ -1,6 +1,6 @@
 <?php
 /*
-  $Id: results.php,v 1.1 2011/08/31 20:02:25 ujirafika.ujirafika Exp $
+  $Id: info_zvonok.php,v 1.4 2012/07/04 20:04:26 ujirafika.ujirafika Exp $
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
@@ -11,6 +11,7 @@
   it under the terms of the GNU General Public License v2 (1991)
   as published by the Free Software Foundation.
 */
+//  $QinfoList = osC_Zvonok::getListing();
 ?>
 
 <?php if (file_exists('images/' . $osC_Template->getPageImage()) == true) {
@@ -19,10 +20,23 @@ echo osc_image(DIR_WS_IMAGES . $osC_Template->getPageImage(), $osC_Template->get
 ?>
 
 <h1><?php echo $osC_Template->getPageTitle(); ?></h1>
-<div class="span9">
+
+<div>
+
+  
 <?php
-  require('includes/modules/product_listing.php');
+
+if ($osC_MessageStack->size('error') > 0) {
+	echo $osC_MessageStack->get('error');
+}
+$success = $osC_MessageStack->size('success');
+if ($osC_MessageStack->size('success') > 0) {
+	echo $osC_MessageStack->get('success');
+}
+
+
 ?>
-<div class="clearfix"></div>
-<button class="btn btn-danger" type="button" onclick="document.location.href='<?php echo osc_href_link(FILENAME_SEARCH) ?>'">Назад</button>
+   
+
+
 </div>

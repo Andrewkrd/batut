@@ -60,14 +60,15 @@
 		  
 			  }	else {
 			  	$this->cache_suffix = $osC_Product->_data['keyword'] . ((isset($_GET['cPath']) && is_numeric($osC_Product->_data['category_id'])) ? '_' . $osC_Product->_data['category_id'] : ''); 
-			  	$product_string = (isset($_GET['cPath']) && is_numeric( str_replace( '_', '', $_GET['cPath'] ) )) ? '&cPath=' . $_GET['cPath']  : null;			  	
+			  	
+                                $product_string =  ""; 	
       		    $this->original_get = $osC_Product->_data['keyword'];
 			  }
 
 			  $this->cache_name = $this->setCacheString( __FILE__, 'products_keyword', $this->cache_suffix );
 
 			  if ( false !== $this->retrieve( $this->cache_name ) ) {
-				KissMT::init()->setCanonical( $this->checkCanonical('',$product_string) );
+				KissMT::init()->setCanonical( osc_href_link("magazin/" . $osC_Product->_data['keyword'] ) );
 				return;
 			  } 
 
@@ -147,7 +148,7 @@
 			  }*/
 //			  $leading_values .= '[-separator-]' . $breadcrumb?implode( '[-separator-]', $breadcrumb ):'';			  
 
-			  KissMT::init()->setCanonical( $this->checkCanonical('',$product_string) );
+			  KissMT::init()->setCanonical( osc_href_link("magazin/" . $osC_Product->_data['keyword'] )  );
 
 			  $database_keywords = KissMT::init()->entities( trim( $osC_Product->_data['tags'] ), $decode = true );
 			  $database_keywords = $database_keywords?( str_replace(',','[-separator-]',$database_keywords)) :'';

@@ -21,7 +21,7 @@ $db = mysql_select_db(DB_DATABASE) or die("Ошибка базы данных");
 
 mysql_query("SET NAMES UTF8");
 
-$csite = "http://ujirafika.ru/";//Вписать свой адрес магазина
+$csite = "http://batut-krasnodar.ru/";//Вписать свой адрес магазина
 
 $now = date('Y-m-d');
 
@@ -91,12 +91,12 @@ while ($tovar = mysql_fetch_array($res)) {
 $map.=<<<END
     
     <url>
-      <loc>{$csite}products.php/$tovar[products_keyword]</loc>
+      <loc>{$csite}magazin/$tovar[products_keyword]</loc>
       <lastmod>$lastmod</lastmod>
       <changefreq>daily</changefreq>      
     </url>
 END;
-
+/*
 if($tovar["manufacturers_id"] > 0) {
 	$map.=<<<END
 	    
@@ -106,12 +106,12 @@ if($tovar["manufacturers_id"] > 0) {
       <changefreq>daily</changefreq>      
     </url>
 END;
-}
+}*/
 }
 
 // Новые товары
 
-$page = 1;
+/*$page = 1;
 for($i=1; $i<$tovar_num; $i=$i+10)	{
 	
 $map.=<<<END
@@ -125,10 +125,10 @@ END;
 
 $page = $page+1;
 }
-
+*/
 
 // Специальная цена
-
+/*
 $tmp="
 	select
 		count(*)
@@ -153,12 +153,12 @@ $map.=<<<END
 END;
 $page = $page+1;
 }
-
+*/
 
 
 
 // Производители
-
+/*
 $manuf_sql="
 	select
 		manufacturers_id, manufacturers_sef
@@ -177,7 +177,7 @@ $map.=<<<END
     </url>
 END;
 }
-
+*/
 
 
 
@@ -185,7 +185,7 @@ END;
 
 $tmp="
 	select
-		info_id, last_modified
+		info_url, last_modified
 	FROM
 		" . DB_TABLE_PREFIX . "info
 	WHERE
@@ -201,7 +201,7 @@ $lastmod = date('Y-m-d', strtotime($info['last_modified']));
 $map.=<<<END
     
     <url>
-      <loc>{$csite}info.php/view,$info[info_id]</loc>
+      <loc>{$csite}info/$info[info_url]</loc>
       <lastmod>$lastmod</lastmod>
       <changefreq>daily</changefreq>      
     </url>
@@ -211,12 +211,12 @@ END;
 $map.=<<<END
     
     <url>
-      <loc>{$csite}info.php/contact</loc>
+      <loc>{$csite}info/contact</loc>
       <lastmod>2012-01-22</lastmod>
       <changefreq>daily</changefreq>      
     </url>
     <url>
-      <loc>{$csite}info.php/sitemap</loc>
+      <loc>{$csite}info/sitemap</loc>
       <lastmod>2012-01-22</lastmod>
       <changefreq>daily</changefreq>      
     </url>
@@ -248,7 +248,7 @@ foreach($tarr as $val1)	{
 }
 
 $lastmod_cat = date('Y-m-d', strtotime("-2 day"));
-
+$links = str_replace("/index.php/", "/category/", $links);
 foreach ($links as $link) {
 $map.=<<<END
     

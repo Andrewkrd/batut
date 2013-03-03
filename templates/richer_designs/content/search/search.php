@@ -39,7 +39,7 @@ echo osc_image(DIR_WS_IMAGES . $osC_Template->getPageImage(), $osC_Template->get
 <div class="submitFormButtons">
   <span style="float: right;"><?php echo $osC_Template->osc_draw_image_jquery_button(array('icon' => 'search', 'title' => $osC_Language->get('button_search'))); ?></span>
 
-  <?php echo osc_link_object('javascript:popupWindow(\'' . osc_href_link(FILENAME_SEARCH, 'help') . '\');', $osC_Language->get('search_help_tips')); ?>
+  <?php //echo osc_link_object('javascript:popupWindow(\'' . osc_href_link(FILENAME_SEARCH, 'help') . '\');', $osC_Language->get('search_help_tips')); ?>
 </div>
 
 <div class="moduleBox">

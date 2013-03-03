@@ -57,8 +57,6 @@
     <script type="text/javascript">
     var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-35383379-1']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
     </script>
-    
-
 
 </head>
 <body>
@@ -104,7 +102,7 @@
         <div class="span4">
           <!-- Logo. Use class "color" to add color to the text. -->
           <div class="logo">
-            <h1><a href="/">Батуты<span class="color bold">Happy Hop</span></a></h1>
+            <h1><a href="/">Батуты&nbsp;<span class="color bold">Happy Hop</span></a></h1>
             <p class="meta" style="font-size: 16px;">+7 (861) 244-44-39</p>
           </div>
         </div>
@@ -271,16 +269,17 @@
                 </li>
                 
                 <li>
-                  <img src="img/photos/slider3.jpg" />
+                  <a href="http://batut-krasnodar.local/magazin/Batut-akvapark-s-bassejnom-Happy-Hop-9045"><img src="img/photos/slider3.jpg" />
                   <div class="flex-caption">
                      <!-- Title -->
                      <h3>Мини аквапарк у вас дома за - <span class="color">39 500 руб.</span></h3>
                      <!-- Para -->
                      <p>3 горки для катания, габариты изделия позволяют играть в нем одновренемнно 5-ти детям. Подключите садовый шланг и превратите отличный игровой центр в настоящий аквапарк!</p>
                      <div class="button">
-                      <a href="single-item.html">Купить прямо сейчас!</a>
+                      <a href="/magazin/batut-akvapark-s-bassejnom-happy-hop-9045?action=cart_add">Купить прямо сейчас!</a>
                      </div>
-                  </div>                  
+                  </div> 
+                  </a>
                 </li>
                 
                 <li>
@@ -291,7 +290,7 @@
                      <!-- Para -->
                      <p>Действительно большой батут выполнен в виде большой прыжковой комнаты с набором надувных фигур образующих полосу препятсвий. Горка и тунель дополняет и без того интересную модель!</p>
                      <div class="button">
-                      <a href="single-item.html">Купить прямо сейчас!</a>
+                      <a href="#">Купить прямо сейчас!</a>
                      </div>
                   </div>                  
                 </li>
@@ -318,8 +317,8 @@
             <a href="items.html"><img src="img/photos/promo-1.png" alt="" /></a>
           </div>
           <div class="pcol-right">
-            <p class="pmed"><a href="items.html">Малые</a></p>
-            <p class="psmall"><a href="items.html">Предназначены для 2-х детей. Общий вес которых не превышает 91 кг.</a></p>
+            <p class="pmed"><a href="/category/malyie_batutyi">Малые</a></p>
+            <p class="psmall"><a href="/category/malyie_batutyi">Предназначены для 2-х детей. Общий вес которых не превышает 91 кг.</a></p>
           </div>
           <div cass="clearfix"></div>
         </div>
@@ -330,11 +329,11 @@
       <div class="span4">
         <div class="pbox bcolor">
           <div class="pcol-left">
-            <a href="items.html"><img src="img/photos/promo-2.png" alt="" /></a>
+            <a href="/category/srednie_batutyi""><img src="img/photos/promo-2.png" alt="" /></a>
           </div>
           <div class="pcol-right">
-            <p class="pmed"><a href="items.html">Средние</a></p>
-            <p class="psmall"><a href="items.html">Допустимое количество детей - 3 ребенка, общий вес которых не превышает 135 кг.</a></p>
+            <p class="pmed"><a href="/category/srednie_batutyi">Средние</a></p>
+            <p class="psmall"><a href="/category/srednie_batutyi">Допустимое количество детей - 3 ребенка, общий вес которых не превышает 135 кг.</a></p>
           </div>
           <div cass="clearfix"></div>
         </div>
@@ -607,9 +606,9 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
       <div class="well">
                <h5><i class="icon-envelope-alt"></i> Рассылка - Скидки, акции и многое другое!!!</h5>
                <p>Будь в курсе событий, только самая актуальная и важная информация.</p>
-               <form class="form-inline">
+               <form class="form-inline" action="/info/subscribe" method="post">
                   <div class="controls controls-row">
-                    <input class="span3" type="text" placeholder="Введите свой email для подписки">
+                    <input name="email_address" class="span3" type="text" placeholder="Введите свой email для подписки">
                     <button type="submit" class="btn">Подписаться</button>
                   </div>
                </form>
@@ -725,5 +724,10 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
 <script src="/js/filter.js"></script> <!-- Filter for support page -->
 <script src="/js/jquery.carouFredSel-6.1.0-packed.js"></script> <!-- Carousel for recent posts -->
 <script src="/js/custom.js"></script> <!-- Custom codes -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter17546242 = new Ya.Metrika({id:17546242, enableAll: true, trackHash:true, webvisor:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/17546242" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 </body>
 </html>
