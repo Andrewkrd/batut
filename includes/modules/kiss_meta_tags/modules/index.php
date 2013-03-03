@@ -41,8 +41,11 @@
       $list_string_first ='';
       $metakeywords = '';   
 
+      //$_SERVER["SERVER_NAME"]
+      echo $url = osc_href_link($_SERVER["REQUEST_URI"]);
+      
       if(strpos($_SERVER["REQUEST_URI"], "?") === false)
-        echo KissMT::init()->basename = substr($_SERVER["REQUEST_URI"], 1);
+        KissMT::init()->basename = substr($_SERVER["REQUEST_URI"], 1);
       else
         KissMT::init()->basename = substr($_SERVER["REQUEST_URI"], 1, strpos($_SERVER["REQUEST_URI"], "?"));
 
