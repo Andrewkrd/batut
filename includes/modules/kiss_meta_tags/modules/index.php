@@ -32,7 +32,7 @@
     
     public function process() {
 
-		global $osC_Database, $osC_Language, $osC_Category, $osC_Manufacturer, $osC_Session;
+      global $osC_Database, $osC_Language, $osC_Category, $osC_Manufacturer, $osC_Session;
 
       $this->description = false;
       $this->descriptions_extension = false;
@@ -40,9 +40,9 @@
       $list_string = '';
       $list_string_first ='';
       $metakeywords = '';   
-      
+
       if(strpos($_SERVER["REQUEST_URI"], "?") === false)
-        KissMT::init()->basename = substr($_SERVER["REQUEST_URI"], 1);
+        echo KissMT::init()->basename = substr($_SERVER["REQUEST_URI"], 1);
       else
         KissMT::init()->basename = substr($_SERVER["REQUEST_URI"], 1, strpos($_SERVER["REQUEST_URI"], "?"));
 
