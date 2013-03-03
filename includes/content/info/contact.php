@@ -29,7 +29,8 @@
 
       $this->_page_title = $osC_Language->get('info_contact_heading');
 
-      $this->addJavascriptFilename("http://api-maps.yandex.ru/1.1/index.xml?key=ALCnM1EBAAAACtBmXAIAXyINDkmlw6WOXbd2CCbtY89Tbj0AAAAAAAAAAADiXzNpAk1U_wQVW45dX5AFeEbd_g==");
+      $this->addJavascriptFilename("http://api-maps.yandex.ru/2.0-stable/?lang=ru-RU&coordorder=longlat&load=package.full&wizard=constructor&onload=fid_135179447786766516408");
+ //     $this->addJavascriptFilename("http://api-maps.yandex.ru/1.1/index.xml?key=ALCnM1EBAAAACtBmXAIAXyINDkmlw6WOXbd2CCbtY89Tbj0AAAAAAAAAAADiXzNpAk1U_wQVW45dX5AFeEbd_g==");
       $this->addJavascriptPhpFilename("includes/maps.js");
       
       if ($osC_Services->isStarted('breadcrumb')) {
