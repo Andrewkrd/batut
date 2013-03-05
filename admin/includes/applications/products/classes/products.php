@@ -248,7 +248,7 @@
         $Qproduct = $osC_Database->query('update :table_products set products_quantity = :products_quantity, products_price = :products_price, products_model = :products_model, products_weight = :products_weight, products_weight_class = :products_weight_class, products_status = :products_status, products_tax_class_id = :products_tax_class_id, available = :available, products_last_modified = now() where products_id = :products_id');
         $Qproduct->bindInt(':products_id', $id);
       } else {
-        $Qproduct = $osC_Database->query('insert into :table_products (products_quantity, products_price, products_model, products_weight, products_weight_class, products_status, products_tax_class_id, products_date_added, begemot_key, begemot_price, available) values (:products_quantity, :products_price, :products_model, :products_weight, :products_weight_class, :products_status, :products_tax_class_id, :products_date_added, :available)');
+        $Qproduct = $osC_Database->query('insert into :table_products (products_quantity, products_price, products_model, products_weight, products_weight_class, products_status, products_tax_class_id, products_date_added, available) values (:products_quantity, :products_price, :products_model, :products_weight, :products_weight_class, :products_status, :products_tax_class_id, :products_date_added, :available)');
         $Qproduct->bindRaw(':products_date_added', 'now()');
       }
 
@@ -374,7 +374,7 @@
           if ( is_numeric($id) ) {
             $Qpd = $osC_Database->query('update :table_products_description set products_name = :products_name, products_description = :products_description, products_keyword = :products_keyword, products_tags = :products_tags, products_url = :products_url, products_subtitle = :products_subtitle, products_param = :products_param where products_id = :products_id and language_id = :language_id');
           } else {
-            $Qpd = $osC_Database->query('insert into :table_products_description (products_id, language_id, products_name, products_description, products_keyword, products_tags, products_url, products_subtitle) values (:products_id, :language_id, :products_name, :products_description, :products_keyword, :products_tags, :products_url, :products_subtitle, :products_param)');
+            $Qpd = $osC_Database->query('insert into :table_products_description (products_id, language_id, products_name, products_description, products_keyword, products_tags, products_url, products_subtitle, products_param) values (:products_id, :language_id, :products_name, :products_description, :products_keyword, :products_tags, :products_url, :products_subtitle, :products_param)');
           }
 
           $Qpd->bindTable(':table_products_description', TABLE_PRODUCTS_DESCRIPTION);
