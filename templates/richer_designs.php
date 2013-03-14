@@ -18,7 +18,7 @@
 	?>	
 	<link rel="shortcut icon" href="<?php echo osc_href_link(null, null, 'AUTO', false) . 'favicon.ico'; ?>" />
 	<base href="<?php echo osc_href_link(null, null, 'AUTO', false); ?>" />
-
+<script src="/js/jquery.js"></script> <!-- jQuery -->
 
 <?php
    if ($osC_Template->hasJavascript()) {
@@ -129,51 +129,12 @@
               <!-- Login and Register link -->
               <span class="lr"><?php if ($osC_Customer->isLoggedOn()) {?><a href="/account.php?logoff">выйти</a><?php }else{ ?><a href="/account.php?login">войти</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/account.php?create">зарегистрироваться</a><?php }?></span>
           </div>
-        </div>       
-        
-        
-
-
-
+        </div>
       </div>
     </div>
   </header>
   <!-- Header ends -->
 
-
-
-<!-- boot
-<header class="jumbotron subhead" id="overview">
-  <div class="row">
-    <div class="span6">
-      <h1>Батуты в Краснодаре!</h1
-    </div>    
-    <div class="bsa well">         
-				<?php echo osc_link_object(osc_href_link(FILENAME_CHECKOUT, null, 'SSL'), $osC_Language->get('cart_contents')); ?> 
-				<?php echo osc_link_object(osc_href_link(FILENAME_CHECKOUT, null, 'SSL'),  osc_image('/templates/' . $osC_Template->getCode() . '/images/header-links-basket.png', $osC_Language->get('cart_contents'))); ?>
-				<?php echo osc_link_object(osc_href_link(FILENAME_CHECKOUT, null, 'SSL'),  $osC_ShoppingCart->numberOfItems() . ' ' . $osC_Language->get('items') . ' - ' . $osC_Currencies->format($osC_ShoppingCart->getTotal())); ?>
-    </div>
-  </div>
-  <div class="subnav">
-	<ul class="nav nav-pills">
-		<li <?php if(basename($_SERVER["SCRIPT_NAME"]) == FILENAME_ACCOUNT) echo 'class="active"';?>><?php echo osc_link_object(osc_href_link(FILENAME_ACCOUNT, null, 'SSL'), $osC_Language->get('my_account')); ?></li>
-		<li <?php if(strpos($_SERVER["REQUEST_URI"], "/info/dostavka-i-oplata") !== false) echo 'class="active"';?>><?php echo osc_link_object(osc_href_link("info/dostavka-i-oplata"), "Доставка и оплата"); ?></li>
-		<li class="dropdown">
-	      	<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-th-list"></i> Категории<b class="caret"></b></a>
-	      	<ul class="dropdown-menu">
-				<li><a href="/category/batutyi_naduvnyie">Батуты надувные</a></li>
-				<li><a href="/category/batutyi_dlya_doma">Батуты для дома</a></li>
-				<li><a href="/category/batutyi_na_prujinah">Батуты на пружинах</a></li>
-				<li><a href="#">Коммерческие батуты</a></li>
-			</ul>
-   		</li>      
-      <?php if ($osC_Customer->isLoggedOn()) {?> 
-      <li class=""><?php echo osc_link_object(osc_href_link(FILENAME_ACCOUNT, 'logoff', 'SSL'), $osC_Language->get('sign_out')); ?></li>
-      <?php }?>
-    </ul>
-  </div>
-</header>
- -->
 <?php
 	} // hasPageHeader
 ?>
@@ -269,7 +230,7 @@
                 </li>
                 
                 <li>
-                  <a href="http://batut-krasnodar.local/magazin/Batut-akvapark-s-bassejnom-Happy-Hop-9045"><img src="img/photos/slider3.jpg" />
+                  <a href="/magazin/Batut-akvapark-s-bassejnom-Happy-Hop-9045"><img src="img/photos/slider3.jpg" />
                   <div class="flex-caption">
                      <!-- Title -->
                      <h3>Мини аквапарк у вас дома за - <span class="color">39 500 руб.</span></h3>
@@ -283,14 +244,14 @@
                 </li>
                 
                 <li>
-                  <img src="img/photos/slider4.jpg" />
+                  <a href="/magazin/naduvnoj-batut-polosa-prepjatstvij-happy-hop-9063"><img src="img/photos/slider4.jpg" />
                   <div class="flex-caption">
                      <!-- Title -->
                      <h3>Полоса препятсвий для детской площадки - <span class="color">28 700 руб.</span></h3>
                      <!-- Para -->
                      <p>Действительно большой батут выполнен в виде большой прыжковой комнаты с набором надувных фигур образующих полосу препятсвий. Горка и тунель дополняет и без того интересную модель!</p>
                      <div class="button">
-                      <a href="#">Купить прямо сейчас!</a>
+                      <a href="/magazin/naduvnoj-batut-polosa-prepjatstvij-happy-hop-9063?action=cart_add">Купить прямо сейчас!</a>
                      </div>
                   </div>                  
                 </li>
@@ -429,32 +390,16 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
 
 <!-- left_column //-->
 
+    <div class="span3 hidden-phone">      
+      <?php echo $content_left; ?>			
+    </div>
 
-      <div class="span3 hidden-phone">
-      
-      <?php
-			    echo $content_left; 
-			?>
-			
-	</div>
-
-
-	
-	
-<!-- boot 
-<div class="span3" style="margin: 0;">        
-            <?php
-			    //echo $content_left;
-			?>	
 <!-- end_left_column -->
-<!--</div> -->
+
 <?php
 		}
 	}
-?>		
-
-
-
+?>
 
 <!-- main_column -->
 
@@ -715,7 +660,7 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
 <!-- Scroll to top -->
 <span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span> 
 <!-- JS -->
-<script src="/js/jquery.js"></script> <!-- jQuery -->
+
 <script src="/js/bootstrap.js"></script> <!-- Bootstrap -->
 <script src="/js/jquery.prettyPhoto.js"></script> <!-- Pretty Photo -->
 <script src="/js/jquery.tweet.js"></script> <!-- Twitter -->
