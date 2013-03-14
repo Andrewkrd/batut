@@ -13,6 +13,7 @@ require('includes/configure.php');
 require('includes/database_tables.php');
 require('includes/classes/database.php');
 require('includes/classes/category_tree.php');*/
+$_SERVER["REQUEST_URI"] = "/sitemap.php";
 
 require('includes/application_top.php');
 
@@ -88,10 +89,11 @@ while ($tovar = mysql_fetch_array($res)) {
 	}*/
 		
 #----------------------------------------------
+$keyword = mb_strtolower($tovar["products_keyword"]);
 $map.=<<<END
     
     <url>
-      <loc>{$csite}magazin/$tovar[products_keyword]</loc>
+      <loc>{$csite}magazin/$keyword</loc>
       <lastmod>$lastmod</lastmod>
       <changefreq>daily</changefreq>      
     </url>
