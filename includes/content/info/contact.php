@@ -34,7 +34,7 @@
       $this->addJavascriptPhpFilename("includes/maps.js");
       
       if ($osC_Services->isStarted('breadcrumb')) {
-        $osC_Breadcrumb->add($osC_Language->get('breadcrumb_contact'), osc_href_link(FILENAME_INFO, $this->_module));
+        $osC_Breadcrumb->add($osC_Language->get('breadcrumb_contact'), osc_href_link(FILENAME_INFO, "/" . $this->_module));
       }
 
       // NEW URL
