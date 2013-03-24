@@ -217,10 +217,11 @@ while ($tovar = mysql_fetch_array($res)) {
 	else
 		$available = "false";
 #----------------------------------------------
+$keyword = mb_strtolower($tovar["products_keyword"]);
 $yandex.=<<<END
     
     <offer id="$tovar[products_id]" available="$available">
-      <url>{$csite}products.php/$tovar[products_keyword]</url>
+      <url>{$csite}products.php/$keyword</url>
       <price>$price</price>
       <currencyId>$valuta</currencyId>
       <categoryId>$tovar[categories_id]</categoryId>
