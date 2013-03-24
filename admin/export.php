@@ -227,7 +227,7 @@ $yandex.=<<<END
       <categoryId>$tovar[categories_id]</categoryId>
       $ppy <delivery>true</delivery>
       <name>$tovar[products_name]</name>
-      $vendor $vendorCode $ldc <description>$description</description>      
+      $vendor $vendorCode <description>$description</description>      
     </offer>
 END;
 	
