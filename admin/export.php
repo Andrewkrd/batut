@@ -22,11 +22,11 @@ mysql_query("SET NAMES UTF8");
 #ТУТ НАЧИНАЮ ГЕНЕРИТЬ XML
 # переменные для заголовка
 $cdate = date("Y-m-d H:i",time());
-$csite = "http://ujirafika.ru/";//Вписать свой адрес магазина
-$cname = "Жирафик";
+$csite = "http://batut-krasnodar.ru/";//Вписать свой адрес магазина
+$cname = "Батуты Краснодар";
 $csite2 = $csite;
 $cname2 = $cname;
-$cdesc = "Детский интернет-магазин в Краснодаре";
+$cdesc = "Батуты Happy Hop в Краснодаре";
 #----------------------------------------------
 $yandex=<<<END
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,7 +70,7 @@ $arr_cats=array();
 	}
 	$yandex .= "</categories>\n";
 	
-$yandex .= "<local_delivery_cost>200</local_delivery_cost>\n";
+$yandex .= "<local_delivery_cost>0</local_delivery_cost>\n";
 #----------------------------------------------
 $yandex .="\n<offers>\n";
 
