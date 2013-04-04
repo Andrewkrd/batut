@@ -50,7 +50,7 @@
 
 /* Private methods */
 
-    function _process() {echo 2222222;
+    function _process() {
       global $osC_Language, $osC_MessageStack; 
 	  
       if (isset($_POST['name']) && !empty($_POST['name'])) {

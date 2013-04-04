@@ -66,7 +66,7 @@
       $osC_Customer->setFirstName(osc_sanitize_string($_POST["firstname"]));
       $osC_Customer->setLastName(osc_sanitize_string($_POST["lastname"]));
       $osC_Customer->setEmailAddress(osc_sanitize_string($_POST["email_address"]));
-      
+      $osC_Customer->setDefaultAddressID(1);
       
 	  $_SESSION['comments'] = "Номер телефона: " . osc_sanitize_string($_POST['phone']) . "<br>";
 	  $_SESSION['comments'] .= "Адрес доставки: " . osc_sanitize_string($_POST['street_address']) . "<br>";

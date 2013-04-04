@@ -690,8 +690,10 @@
       if ( empty($key) ) {
         return $this->_shipping_address;
       }
-
-      return $this->_shipping_address[$key];
+      if(array_key_exists($key, $this->_shipping_address))
+        return $this->_shipping_address[$key];
+      else
+        return "";
     }
 
     public function resetShippingAddress() {
@@ -784,7 +786,7 @@
       if(array_key_exists($key, $this->_billing_address))
      	 return $this->_billing_address[$key];
       else
-      	 return "null";
+      	 return "";
     }
 
     public function resetBillingAddress() {
