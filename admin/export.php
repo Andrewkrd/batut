@@ -221,7 +221,7 @@ $keyword = mb_strtolower($tovar["products_keyword"]);
 $yandex.=<<<END
     
     <offer id="$tovar[products_id]" available="$available">
-      <url>{$csite}products.php/$keyword</url>
+      <url>{$csite}magazin/$keyword</url>
       <price>$price</price>
       <currencyId>$valuta</currencyId>
       <categoryId>$tovar[categories_id]</categoryId>
