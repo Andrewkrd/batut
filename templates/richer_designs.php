@@ -202,15 +202,15 @@
                   <!-- Slide #1 -->
                 <li>
                   <!-- Image -->
-                  <a href="/magazin/batut-igrovoj-kompleks-happy-hop-9206"><img src="img/photos/slider1.jpg" /></a>
+                  <a href="/category/rasprodaja"><img src="img/photos/slider1.jpg" /></a>
                   <!-- Caption -->
                   <div class="flex-caption">
                      <!-- Title -->
-                     <h3>Батут игровой комплекс 11 в 1 - <span class="color">30 700 руб.</span></h3>
+                     <h3>Сезонная распродажа!!! <span class="color">Скидка - 10%</span></h3>
                      <!-- Para -->
-                     <p>Большой батут с горкой, сухим бассейном, баскетбольным кольцом, тунелем, кольцебросом и многим другим...</p>
+                     <p>Ознакомьтесь с выгодным предложением в разделе распродажа</p>
                      <div class="button">
-                      <a href="/magazin/Batut-igrovoj-kompleks-Happy-Hop-9206?action=cart_add">Купить прямо сейчас!</a>
+                      <a href="/category/rasprodaja">Перейти в раздел со скидками!</a>
                      </div>
                   </div>
                 </li>
@@ -220,7 +220,7 @@
                   <a href="/magazin/detskij-batut-shhenki-dalmatinca-9109"><img src="img/photos/slider2.jpg" /></a>
                   <div class="flex-caption">
                      <!-- Title -->
-                     <h3>ХИТ Продаж! Надувной батут Далматинец - <span class="color">29 900 руб.</span></h3>
+                     <h3>ХИТ Продаж! Надувной батут Далматинец - <span class="color">26 910 руб.</span></h3>
                      <!-- Para -->
                      <p>Уникальный дизайнерский ход! Батут в виде забавных щенков далматинцев, не оставят равнодушными Ваших детей, имеет в составе игровую прыжковую комнату, огороженную защитной сетью и большую надувную горку.</p>
                      <div class="button">
@@ -243,18 +243,35 @@
                   </a>
                 </li>
                 
+                
+                
                 <li>
-                  <a href="/magazin/naduvnoj-batut-polosa-prepjatstvij-happy-hop-9063"><img src="img/photos/slider4.jpg" />
+                  <!-- Image -->
+                  <a href="/magazin/batut-igrovoj-kompleks-happy-hop-9206"><img src="img/photos/slider1-2.jpg" /></a>
+                  <!-- Caption -->
                   <div class="flex-caption">
                      <!-- Title -->
-                     <h3>Полоса препятсвий для детской площадки - <span class="color">28 700 руб.</span></h3>
+                     <h3>Батут игровой комплекс 11 в 1 - <span class="color">30 700 руб.</span></h3>
                      <!-- Para -->
-                     <p>Действительно большой батут выполнен в виде большой прыжковой комнаты с набором надувных фигур образующих полосу препятсвий. Горка и тунель дополняет и без того интересную модель!</p>
+                     <p>Большой батут с горкой, сухим бассейном, баскетбольным кольцом, тунелем, кольцебросом и многим другим...</p>
+                     <div class="button">
+                      <a href="/magazin/Batut-igrovoj-kompleks-Happy-Hop-9206?action=cart_add">Купить прямо сейчас!</a>
+                     </div>
+                  </div>
+                </li>
+                
+                
+                
+  <!--              <li>
+                  <a href="/magazin/naduvnoj-batut-polosa-prepjatstvij-happy-hop-9063"><img src="img/photos/slider4.jpg" />
+                  <div class="flex-caption">
+                   <h3>Полоса препятсвий для детской площадки - <span class="color">25 830 руб.</span></h3>
+                   <p>Действительно большой батут выполнен в виде большой прыжковой комнаты с набором надувных фигур образующих полосу препятсвий. Горка и тунель дополняет и без того интересную модель!</p>
                      <div class="button">
                       <a href="/magazin/naduvnoj-batut-polosa-prepjatstvij-happy-hop-9063?action=cart_add">Купить прямо сейчас!</a>
                      </div>
                   </div>                  
-                </li>
+                </li> -->
                 
               </ul>
             </div>
