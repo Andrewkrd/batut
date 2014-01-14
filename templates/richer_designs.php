@@ -198,29 +198,25 @@
             <div class="flex-image flexslider">
               <ul class="slides">
                   <!-- Each slide should be enclosed inside li tag. -->
-                  
                   <!-- Slide #1 -->
-                <li>
-                  <!-- Image -->
+                    <!--
+              <li>
                   <a href="/category/rasprodaja"><img src="img/photos/slider1.jpg" /></a>
-                  <!-- Caption -->
                   <div class="flex-caption">
-                     <!-- Title -->
                      <h3>Сезонная распродажа!!! <span class="color">Скидка - 10%</span></h3>
-                     <!-- Para -->
                      <p>Ознакомьтесь с выгодным предложением в разделе распродажа</p>
                      <div class="button">
                       <a href="/category/rasprodaja">Перейти в раздел со скидками!</a>
                      </div>
                   </div>
                 </li>
-                
+                -->
                   <!-- Slide #2 -->
                 <li>
                   <a href="/magazin/detskij-batut-shhenki-dalmatinca-9109"><img src="img/photos/slider2.jpg" /></a>
                   <div class="flex-caption">
                      <!-- Title -->
-                     <h3>ХИТ Продаж! Надувной батут Далматинец - <span class="color">26 910 руб.</span></h3>
+                     <h3>ХИТ Продаж! Надувной батут Далматинец - <span class="color">32 890 руб.</span></h3>
                      <!-- Para -->
                      <p>Уникальный дизайнерский ход! Батут в виде забавных щенков далматинцев, не оставят равнодушными Ваших детей, имеет в составе игровую прыжковую комнату, огороженную защитной сетью и большую надувную горку.</p>
                      <div class="button">
@@ -233,7 +229,7 @@
                   <a href="/magazin/Batut-akvapark-s-bassejnom-Happy-Hop-9045"><img src="img/photos/slider3.jpg" />
                   <div class="flex-caption">
                      <!-- Title -->
-                     <h3>Мини аквапарк у вас дома за - <span class="color">39 500 руб.</span></h3>
+                     <h3>Мини аквапарк у вас дома за - <span class="color">43 500 руб.</span></h3>
                      <!-- Para -->
                      <p>3 горки для катания, габариты изделия позволяют играть в нем одновренемнно 5-ти детям. Подключите садовый шланг и превратите отличный игровой центр в настоящий аквапарк!</p>
                      <div class="button">
@@ -251,7 +247,7 @@
                   <!-- Caption -->
                   <div class="flex-caption">
                      <!-- Title -->
-                     <h3>Батут игровой комплекс 11 в 1 - <span class="color">30 700 руб.</span></h3>
+                     <h3>Батут игровой комплекс 11 в 1 - <span class="color">33 770 руб.</span></h3>
                      <!-- Para -->
                      <p>Большой батут с горкой, сухим бассейном, баскетбольным кольцом, тунелем, кольцебросом и многим другим...</p>
                      <div class="button">
@@ -262,16 +258,16 @@
                 
                 
                 
-  <!--              <li>
+                <li>
                   <a href="/magazin/naduvnoj-batut-polosa-prepjatstvij-happy-hop-9063"><img src="img/photos/slider4.jpg" />
                   <div class="flex-caption">
-                   <h3>Полоса препятсвий для детской площадки - <span class="color">25 830 руб.</span></h3>
+                   <h3>Полоса препятсвий для детской площадки - <span class="color">31 600 руб.</span></h3>
                    <p>Действительно большой батут выполнен в виде большой прыжковой комнаты с набором надувных фигур образующих полосу препятсвий. Горка и тунель дополняет и без того интересную модель!</p>
                      <div class="button">
                       <a href="/magazin/naduvnoj-batut-polosa-prepjatstvij-happy-hop-9063?action=cart_add">Купить прямо сейчас!</a>
                      </div>
                   </div>                  
-                </li> -->
+                </li>
                 
               </ul>
             </div>
