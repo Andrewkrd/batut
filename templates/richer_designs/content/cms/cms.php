@@ -44,11 +44,9 @@ if (isset($_GET['cmskeyword'])) {;
     	echo '<h3><a href="' . osc_href_link("articles/" . $QcmsList->value("cms_url")) . '"> ' . $QcmsList->value("cms_name") . '</a></h3>
 
 				  <div class="content">
-				    ' . $QcmsList->value("cms_short_text") . ' ' . $osC_Language->get('cms_text_more') . '
-				    <p align="right"><!-- link to item will go here -->
-					<a href="' . osc_href_link("articles/" . $QcmsList->value("cms_url")) . '"> ' .
-                    $osC_Language->get('cms_read_text_more') . '</a></p>' . $QcmsList->value("date_added") .
-                 '</div>';
+				    <p>' . $QcmsList->value("cms_short_text") . ' ' . $osC_Language->get('cms_text_more') . '</p>
+				    <button class="btn btn-danger pull-left" type="button" onclick="document.location.href=\'' . osc_href_link("articles/" . $QcmsList->value("cms_url")) . '\'">продолжить</button>
+                                  </div><div style="clear: both">';
     }
 
 ?>

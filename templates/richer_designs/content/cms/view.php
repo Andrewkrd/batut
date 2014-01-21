@@ -25,7 +25,5 @@
 			  
 ?>
 
-<div class="submitFormButtons" style="text-align: right;">
-  <?php echo $osC_Template->osc_draw_image_jquery_button(array('href' => osc_href_link(FILENAME_CMS), 'icon' => 'triangle-1-e', 'title' => $osC_Language->get('button_continue'))); ?>
-</div>
+<button class="btn btn-danger pull-right" type="button" onclick="document.location.href='/articles/'">продолжить</button>
 
