@@ -9,7 +9,7 @@
  
   Filename cms.php
   Desc Basic CMS system for osCommerce V3.0A5
-  Modify by Gergely Tóth
+  Modify by Gergely Tï¿½th
   http://oscommerce-extra.hu
 */
 

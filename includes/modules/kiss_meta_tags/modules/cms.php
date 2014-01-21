@@ -57,7 +57,12 @@
 		
 		$Qkeyword = $osC_Database->query('select cms_keyword, cms_short_text from :table_cms where cms_url = :cms_url');
 		$Qkeyword->bindTable(':table_cms', TABLE_CMS);
-		$Qkeyword->bindValue(':cms_url', $_GET['view']);
+                $url = $_SERVER["REQUEST_URI"];
+                if(strpos($url, "articles")) 
+                  $request_url = substr($url, strpos($url, "articles/")+9);
+                else
+                  $request_url = false;
+		$Qkeyword->bindValue(':cms_url', $request_url);
 		$Qkeyword->execute();
 					
 		$breadcrumb = KissMT::init()->retrieve( 'breadcrumb' );

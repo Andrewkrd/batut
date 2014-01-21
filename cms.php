@@ -22,7 +22,7 @@
   $osC_Language->load('cms');
 
   if ($osC_Services->isStarted('breadcrumb')) {
-    $osC_Breadcrumb->add($osC_Language->get('breadcrumb_cms'), osc_href_link(FILENAME_CMS));
+    $osC_Breadcrumb->add($osC_Language->get('breadcrumb_cms'), osc_href_link("articles/"));
   }
 
   $osC_Template = osC_Template::setup('cms');

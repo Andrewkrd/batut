@@ -28,12 +28,6 @@ echo osc_image(DIR_WS_IMAGES . $osC_Template->getPageImage(), $osC_Template->get
 
 <h1><?php echo $osC_Template->getPageTitle(); ?></h1>
 
-<!-- start of CMS search -->
-<?php echo '<form name="search" action="' . osc_href_link(FILENAME_CMS, null, 'NONSSL', false) . '" method="get">' .
-               osc_draw_input_field('cmskeyword', null, 'style="width: 80%;" maxlength="30"') . '&nbsp;' . osc_draw_hidden_session_id_field() .               $osC_Template->osc_draw_image_jquery_button(array('icon' => 'search', 'title' => $osC_Language->get('box_search_heading'))) . '<br />' .
-                        '</form>';
-?>
-<!-- end of CMS search -->
 
 <?php
 if (isset($_GET['cmskeyword'])) {;
@@ -47,12 +41,12 @@ if (isset($_GET['cmskeyword'])) {;
 <?php
 
 	while ($QcmsList->next()) {
-    	echo '<h3><a href="' . osc_href_link(FILENAME_CMS, "view=" . $QcmsList->value("cms_url"), "NONSSL") . '"> ' . $QcmsList->value("cms_name") . '</a></h3>
+    	echo '<h3><a href="' . osc_href_link("articles/" . $QcmsList->value("cms_url")) . '"> ' . $QcmsList->value("cms_name") . '</a></h3>
 
 				  <div class="content">
 				    ' . $QcmsList->value("cms_short_text") . ' ' . $osC_Language->get('cms_text_more') . '
 				    <p align="right"><!-- link to item will go here -->
-					<a href="' . osc_href_link(FILENAME_CMS, "view=" . $QcmsList->value("cms_url"), "NONSSL") . '"> ' .
+					<a href="' . osc_href_link("articles/" . $QcmsList->value("cms_url")) . '"> ' .
                     $osC_Language->get('cms_read_text_more') . '</a></p>' . $QcmsList->value("date_added") .
                  '</div>';
     }

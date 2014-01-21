@@ -9,7 +9,7 @@
  
   Filename view.php
   Desc Basic CMS system for osCommerce V3.0A5
-  Modify by Gergely Tóth
+  Modify by Gergely Tï¿½th
   http://oscommerce-extra.hu
 */
 
@@ -17,11 +17,11 @@
   $QcmsDetails = osC_Cms::getDetails();
   
 ?>
-<h1><?php echo $osC_Template->getPageTitle(); ?></h1>
+<div class="page-header"><h1><?php echo $osC_Template->getPageTitle(); ?></h1></div>
 <?php
-    echo '<div class="moduleBox">
-    		<div class="content">' . nl2br($QcmsDetails->value("cms_description")) . '</div>
-		  </div>' . $QcmsDetails->value("last_modified");
+    echo '<div class="row-fluid">
+    		<div class="span12">' . nl2br($QcmsDetails->value("cms_description")) . '</div>
+		  </div>';
 			  
 ?>
 

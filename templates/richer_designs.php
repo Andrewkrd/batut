@@ -113,7 +113,7 @@
            <form class="form-search" action="/search.php">
             <div class="input-append">
               <input class="span3" id="appendedInputButton" type="text" placeholder="Введите фразу для поиска" name="keywords" />
-              <button class="btn" type="button">Поиск</button>
+              <button class="btn" type="submit">Поиск</button>
 			</div>
            </form>            
    	
@@ -177,7 +177,9 @@
 						unset($osC_Box);
 						?>						
                       </ul>
-                   </li>   
+                   </li>
+                   <li><a href="/articles/">Статьи</a></li>
+                   <li><a href="/articles/foto-i-video">Фото и Видео</a></li>
                    <li><a href="/info/dostavka-i-oplata">Доставка и оплата</a></li>
                    <li><a href="/info/contact">Контакты</a></li>
                  </ul>
@@ -595,7 +597,7 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
                   <hr>
                   <i class="icon-home"></i> &nbsp; г. Краснодар, ул. Сормовская, 34, магазин Жирафик</p>
                   <hr>
-                  <i class="icon-phone"></i> &nbsp; +7 (861) 244-44-39
+                  <i class="icon-phone"></i> &nbsp; +7 (861) 244-44-39, с 9 до 19, пн-сб.
                   <hr>
                   <i class="icon-envelope-alt"></i> &nbsp; <a href="mailto:%20info@batut-krasnodar.ru?subject=Вопрос%20на%20сайте!" style="font-size: 14px">info@batut-krasnodar.ru</a>                 
                 </div>
@@ -609,7 +611,7 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
 									<ul>
 										<li class="advantages">
 												<i class="icon-circle-arrow-right"></i>
-												Доставка любого батута по г. Краснодар, Сочи, Адлер, Новроссийск, Анапа, Витязево, Геленджик осуществляется бесплатно. Оплата курьеру при получении наличными.</span>
+												Доставка любого батута по г. Краснодар, Новроссийск, Анапа, Витязево, Геленджик осуществляется бесплатно. Оплата курьеру при получении наличными.</span>
 										</li>
 										<li class="advantages">
 												<i class="icon-circle-arrow-right"></i>
@@ -617,10 +619,10 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
 										</li>
 										<li class="advantages">
 												<i class="icon-circle-arrow-right"></i>
-												Уникальный сервис - установка батута! При доставке наш курьер установит, надует купленный батут и ответит на все Ваши вопросы.
+                                                                                                <a href="/articles/kak-ustanovit-batut-Happy-hop">Установка батута</a> - бесплатно! При доставке наш курьер установит, надует купленный батут и ответит на все Ваши вопросы.
 										<li>
 												<i class="icon-circle-arrow-right"></i>
-												Батуты Happy hop оптом со склада в Краснодаре. Большой товарный запас, все модели в наличии.
+												<a href="/info/batutyi-optom">Батуты Happy hop оптом</a> со склада в Краснодаре. Большой товарный запас, все модели в наличии.
 									</ul>
 								</div>
 							</div>
@@ -646,6 +648,7 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
                     </div>
                     <div class="col-right">
                       <ul>
+                        <li><a href="/articles/kak-ustanovit-batut-Happy-hop">Установка батута</a></li>
                         <li><?php if ($osC_Customer->isLoggedOn()) {?><a href="/account.php">Мой аккаунт</a><?php }else{ ?><a href="/account.php/login">Войти</a><?php }?></a></li>
                         <li><a href="/checkout.php">Корзина</a></li>
                         <li><a href="/info/dostavka-i-oplata">Доставка и оплата</a></li>

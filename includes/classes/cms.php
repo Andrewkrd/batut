@@ -62,7 +62,14 @@
       $QcmsList->bindTable(':table_cms', TABLE_CMS);
       //$Qaccount->bindInt(':customers_id', $osC_Customer->getID());
       $QcmsList->bindInt(':language_id', $osC_Language->getID());
-      $QcmsList->bindValue(':request_url', $_GET['view']);
+      
+      $url = $_SERVER["REQUEST_URI"];
+      if(strpos($url, "articles")) 
+      	$request_url = substr($url, strpos($url, "articles/")+9);
+      else
+      	$request_url = false;
+      
+      $QcmsList->bindValue(':request_url', $request_url);
       $QcmsList->execute();
 
       return $QcmsList;

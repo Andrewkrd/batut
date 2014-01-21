@@ -9,7 +9,7 @@
  
   Filename view.php
   Desc Basic CMS system for osCommerce V3.0A5
-  Modify by Gergely Tóth
+  Modify by Gergely Tï¿½th
   http://oscommerce-extra.hu
 */
 
@@ -31,14 +31,14 @@
 
     function osC_Cms_View() {
       global $osC_Services, $osC_Language, $osC_Breadcrumb, $osC_Cms;
-      
+
    //initialize the page_title
       $QcmsDetails = osC_Cms::getDetails();
       $this->_page_title = $QcmsDetails->value("cms_name");
 
 
       if ($osC_Services->isStarted('breadcrumb')) {
-        $osC_Breadcrumb->add($QcmsDetails->value("cms_name"), osc_href_link(FILENAME_CMS, $this->_module));
+        $osC_Breadcrumb->add($QcmsDetails->value("cms_name"), osc_href_link("articles/" . $QcmsDetails->value("cms_url")));
       }
     }
   }
