@@ -20,8 +20,8 @@
 <div class="page-header"><h1><?php echo $osC_Template->getPageTitle(); ?></h1></div>
 <?php
     echo '<div class="row-fluid">
-    		<div class="span12">' . nl2br($QcmsDetails->value("cms_description")) . '</div>
-		  </div>';
+    		<div class="span12">' . $QcmsDetails->value("cms_description") . '</div>
+	</div>';
 			  
 ?>
 
