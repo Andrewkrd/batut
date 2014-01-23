@@ -19,10 +19,7 @@
 ?>
 <div class="page-header"><h1><?php echo $osC_Template->getPageTitle(); ?></h1></div>
 <?php
-    echo '<div class="row-fluid">
-    		<div class="span12">' . $QcmsDetails->value("cms_description") . '</div>
-	</div>';
-			  
+    echo '<div class="row-fluid"><div class="span12">' . $QcmsDetails->value("cms_description") . '</div></div>';
 ?>
 
 <button class="btn btn-danger pull-right" type="button" onclick="document.location.href='/articles/'">продолжить</button>
