@@ -666,7 +666,7 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
 
             <hr>
             <!-- Copyright info -->
-            <p class="copy">&copy; 2013 - Интернет-магазин батутов Краснодар | <a href="/">Главная</a> | <a href="/info/dostavka-i-oplata">Доставка и оплата</a> | <a href="/checkout.php">Корзина</a> | <a href="/info/contact">Контакты</a></p>
+            <p class="copy">&copy; 2014 - Интернет-магазин батутов Краснодар | <a href="/">Главная</a> | <a href="/info/dostavka-i-oplata">Доставка и оплата</a> | <a href="/checkout.php">Корзина</a> | <a href="/info/contact">Контакты</a></p>
       </div>
     </div>
   <div class="clearfix"></div>

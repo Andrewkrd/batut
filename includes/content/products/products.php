@@ -65,7 +65,7 @@
             $osC_Breadcrumb->add($osC_Product->getTitle(), osc_href_link(FILENAME_PRODUCTS, $osC_Product->getKeyword()));
           }
 
-          $this->_page_title = $osC_Product->getTitle();
+          $this->_page_title = $osC_Product->getTitle(); 
         } else {
           $this->_page_title = $osC_Language->get('product_not_found_heading');
           $this->_page_contents = 'info_not_found.php';

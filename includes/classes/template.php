@@ -210,7 +210,7 @@
       	$module = "cms";
       }
       
-      if(strpos($_SERVER["REQUEST_URI"], "articles/") && strlen($_SERVER["REQUEST_URI"]) > 10) {
+      if(strpos($_SERVER["REQUEST_URI"], "articles/") && (strlen($_SERVER["REQUEST_URI"]) > 10 && !isset($_GET['page']))) {
       	$group = "cms";
       	$module = "view";
       }
