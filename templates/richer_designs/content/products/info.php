@@ -163,15 +163,19 @@
 				</tr>
 				<tr>
 					<td><strong>Застежки:</strong></td>
-					<td>Лавсан</td>
+					<td>металл</td>
+				</tr>
+                                <tr>
+					<td><strong>Крепеж к земле:</strong></td>
+					<td>металл</td>
 				</tr>
 				<tr>
 					<td><strong>Предел прочности на растяжение:</strong></td>
-					<td>до 136 кг</td>
+					<td>до 181 кг</td>
 				</tr>
 				<tr>
 					<td><strong>Прочность материала на разрыв:</strong></td>
-					<td>до 14 кг;</td>
+					<td>до 36 кг;</td>
 				</tr>
 				<tr>
 					<td><strong>Рабочий диапазон температур:</strong></td>
@@ -179,12 +183,12 @@
 				</tr>
                   <?php } else { ?>
                             	<tr>
-					<td width="35%"><strong>111111111Материал батута:</strong></td>
+					<td width="35%"><strong>Материал батута:</strong></td>
 					<td>ПВХ ламинированная ткань Оксфорд (laminated PVC);</td>
 				</tr>
 				<tr>
 					<td><strong>Застежки:</strong></td>
-					<td>Лавсан</td>
+					<td>лавсан</td>
 				</tr>
 				<tr>
 					<td><strong>Предел прочности на растяжение:</strong></td>
