@@ -47,9 +47,9 @@
               <!-- Image -->
                  <div style="float: left; text-align: center; padding: 0 10px 10px 0; width: auto;">
     <?php $group_id = $osC_Image->getID('large');
-    $lightboxcaption = $osC_Language->get('download_image');
+    $lightboxcaption = $osC_Product->getTitle();
 		
-    echo '<div class="popup-gallery">' . osc_link_object(osc_href_link(DIR_WS_IMAGES.'products/'.$osC_Image->getCode($group_id).'/'.$osC_Product->getImage()), $osC_Image->show($osC_Product->getImage(), $osC_Product->getTitle(), null, 'product_info'),'rel="lightbox-tour" title="'.$lightboxcaption.'"') . '</div>';;
+    echo '<div class="popup-gallery">' . osc_link_object(osc_href_link(DIR_WS_IMAGES.'products/'.$osC_Image->getCode($group_id).'/'.$osC_Product->getImage()), $osC_Image->show($osC_Product->getImage(), $osC_Product->getTitle(), null, 'product_info'),'title="'.$lightboxcaption.'"') . '</div>';;
     
     if ($osC_Product->numberOfImages() > 1) {	
         echo '<div class="popup-gallery" style="padding: 10px;">';
