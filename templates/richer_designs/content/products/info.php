@@ -154,8 +154,9 @@
             </table>
             <h5 class="title">Характеристики материала</h5>            
             
- 			<table class="table table-striped tcart">
+ 	<table class="table table-striped tcart">
               <tbody>
+                  <?php if($osC_Product->getCategoryID() == 299) { ?>
 				<tr>
 					<td width="35%"><strong>Материал батута:</strong></td>
 					<td>ПВХ ламинированная ткань Оксфорд (laminated PVC);</td>
@@ -176,6 +177,29 @@
 					<td><strong>Рабочий диапазон температур:</strong></td>
 					<td>от - 10 до + 40 °C;</td>
 				</tr>
+                  <?php } else { ?>
+                            	<tr>
+					<td width="35%"><strong>111111111Материал батута:</strong></td>
+					<td>ПВХ ламинированная ткань Оксфорд (laminated PVC);</td>
+				</tr>
+				<tr>
+					<td><strong>Застежки:</strong></td>
+					<td>Лавсан</td>
+				</tr>
+				<tr>
+					<td><strong>Предел прочности на растяжение:</strong></td>
+					<td>до 136 кг</td>
+				</tr>
+				<tr>
+					<td><strong>Прочность материала на разрыв:</strong></td>
+					<td>до 14 кг;</td>
+				</tr>
+				<tr>
+					<td><strong>Рабочий диапазон температур:</strong></td>
+					<td>от - 10 до + 40 °C;</td>
+				</tr>    
+                                
+                  <?php } ?>
               </tbody>
             </table>
             
