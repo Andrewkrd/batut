@@ -163,15 +163,15 @@
 				</tr>
 				<tr>
 					<td><strong>Застежки:</strong></td>
-					<td>металл</td>
+					<td>металл;</td>
 				</tr>
                                 <tr>
 					<td><strong>Крепеж к земле:</strong></td>
-					<td>металл</td>
+					<td>металл;</td>
 				</tr>
 				<tr>
 					<td><strong>Предел прочности на растяжение:</strong></td>
-					<td>до 181 кг</td>
+					<td>до 181 кг;</td>
 				</tr>
 				<tr>
 					<td><strong>Прочность материала на разрыв:</strong></td>
@@ -188,11 +188,11 @@
 				</tr>
 				<tr>
 					<td><strong>Застежки:</strong></td>
-					<td>лавсан</td>
+					<td>лавсан;</td>
 				</tr>
 				<tr>
 					<td><strong>Предел прочности на растяжение:</strong></td>
-					<td>до 136 кг</td>
+					<td>до 136 кг;</td>
 				</tr>
 				<tr>
 					<td><strong>Прочность материала на разрыв:</strong></td>
