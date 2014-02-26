@@ -48,6 +48,8 @@
           }
 
           $this->addJavascriptFilename('/templates/' . $this->getCode() . '/javascript/' . $this->_group . '/info.js');
+          $this->addJavascriptFilename('/templates/' . $this->getCode() . '/javascript/' . $this->_group . '/lightbox.js');
+
 
           osC_Services_category_path::process($osC_Product->getCategoryID());
 

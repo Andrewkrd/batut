@@ -49,27 +49,19 @@
     <?php $group_id = $osC_Image->getID('large');
     $lightboxcaption = $osC_Language->get('download_image');
 		
-    echo osc_link_object(osc_href_link(DIR_WS_IMAGES.'products/'.$osC_Image->getCode($group_id).'/'.$osC_Product->getImage()), $osC_Image->show($osC_Product->getImage(), $osC_Product->getTitle(), null, 'product_info'),'rel="lightbox-tour" title="'.$lightboxcaption.'"');
-		
-	  	if ($osC_Product->numberOfImages() > 1) {
-	echo '<div id="counterst">';
-  		foreach ($osC_Product->getImages() as $images) {
-  			if ($osC_Product->getImage() != $images['image']) echo osc_link_object(osc_href_link(DIR_WS_IMAGES. 'products/' . $osC_Image->getCode($group_id) . '/' . $images['image']), $osC_Image->show($images['image'], $osC_Product->getTitle(), null, 'mini'), 'rel="lightbox-tour" title="'.$lightboxcaption.'"'); echo '&nbsp;';
-    	}
-		echo '</div>';
-    }
-			
-  	if ($osC_Product->numberOfImages() > 1) {
-  		echo "\n<div id=\"gallerydiv\" style=\"display:none;\">";
-  		foreach ($osC_Product->getImages() as $images) {
-  			if ($osC_Product->getImage() != $images['image']) echo osc_link_object(osc_href_link(DIR_WS_IMAGES. 'products/' . $osC_Image->getCode($group_id) . '/' . $images['image']),  $osC_Image->show($images['image'], $osC_Product->getTitle(), null, 'product_info'), 'rel="lightbox-tour2" title="'.$lightboxcaption.'"');
-    	}
-    	echo "</div>";
-    }
-	
-	?>
+    echo '<div class="popup-gallery">' . osc_link_object(osc_href_link(DIR_WS_IMAGES.'products/'.$osC_Image->getCode($group_id).'/'.$osC_Product->getImage()), $osC_Image->show($osC_Product->getImage(), $osC_Product->getTitle(), null, 'product_info'),'rel="lightbox-tour" title="'.$lightboxcaption.'"') . '</div>';;
+    
+    if ($osC_Product->numberOfImages() > 1) {	
+        echo '<div class="popup-gallery" style="padding: 10px;">';
+            foreach ($osC_Product->getImages() as $images) {
+                            if ($osC_Product->getImage() != $images['image']) echo osc_link_object(osc_href_link(DIR_WS_IMAGES. 'products/' . $osC_Image->getCode($group_id) . '/' . $images['image']), $osC_Image->show($images['image'], $osC_Product->getTitle(), null, 'mini'), 'title="'.$lightboxcaption.'"'); echo '&nbsp;';
+            }
+        echo '</div>';
+    }?>
+                     
   </div>
-
+             
+              
 <?php
   }
 ?>
