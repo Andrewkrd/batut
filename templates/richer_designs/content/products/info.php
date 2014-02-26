@@ -18,7 +18,7 @@
           <div class="row">
             <div class="span3">
             
-<?php if(in_array($osC_Product->getAvailable(), array(1,2,3,4))) { echo $osC_Product->getCategoryID();
+<?php if(in_array($osC_Product->getAvailable(), array(1,2,3,4))) {
 
 	$availability = "InStock";
 		
