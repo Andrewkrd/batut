@@ -156,7 +156,22 @@
             
  	<table class="table table-striped tcart">
               <tbody>
-                  <?php if($osC_Product->getCategoryID() == 299) { ?>
+                  <?php 
+                  if($osC_Product->getCategoryID() == 304) { ?>
+                                <tr>
+					<td width="35%"><strong>Полотно для прыжков:</strong></td>
+					<td>Перматрон (Permatron);</td>
+				</tr>
+				<tr>
+					<td><strong>Материал сетки:</strong></td>
+					<td>Терилен (Terylene);</td>
+				</tr>
+                                <tr>
+					<td><strong>Защитный мат:</strong></td>
+					<td>Полиэстер (Polyester) матовый 0.6мм с износоустойчивой подкладкой;</td>
+				</tr>
+                  <?}
+                  elseif($osC_Product->getCategoryID() == 299) { ?>
 				<tr>
 					<td width="35%"><strong>Материал батута:</strong></td>
 					<td>ПВХ ламинированная ткань Оксфорд (laminated PVC);</td>
