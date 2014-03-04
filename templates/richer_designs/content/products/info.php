@@ -159,63 +159,63 @@
                   <?php 
                   if($osC_Product->getCategoryID() == 304) { ?>
                                 <tr>
-					<td width="35%"><strong>Полотно для прыжков:</strong></td>
-					<td>Перматрон (Permatron);</td>
+					<td width="35%"><strong>Полотно для прыжков</strong></td>
+					<td>Перматрон (Permatron)</td>
 				</tr>
 				<tr>
-					<td><strong>Материал сетки:</strong></td>
-					<td>Терилен (Terylene);</td>
+					<td><strong>Материал сетки</strong></td>
+					<td>Терилен (Terylene)</td>
 				</tr>
                                 <tr>
-					<td><strong>Защитный мат:</strong></td>
-					<td>Полиэстер (Polyester) матовый 0.6мм с износоустойчивой подкладкой;</td>
+					<td><strong>Защитный мат</strong></td>
+					<td>Полиэстер (Polyester) матовый 0.6мм с износоустойчивой подкладкой</td>
 				</tr>
                   <?}
                   elseif($osC_Product->getCategoryID() == 299) { ?>
 				<tr>
-					<td width="35%"><strong>Материал батута:</strong></td>
-					<td>ПВХ ламинированная ткань Оксфорд (laminated PVC);</td>
+					<td width="35%"><strong>Материал батута</strong></td>
+					<td>ПВХ ламинированная ткань Оксфорд (laminated PVC)</td>
 				</tr>
 				<tr>
-					<td><strong>Застежки:</strong></td>
-					<td>металл;</td>
+					<td><strong>Застежки</strong></td>
+					<td>металл</td>
 				</tr>
                                 <tr>
-					<td><strong>Крепеж к земле:</strong></td>
-					<td>металл;</td>
+					<td><strong>Крепеж к земле</strong></td>
+					<td>металл</td>
 				</tr>
 				<tr>
-					<td><strong>Предел прочности на растяжение:</strong></td>
-					<td>до 181 кг;</td>
+					<td><strong>Предел прочности на растяжение</strong></td>
+					<td>до 181 кг</td>
 				</tr>
 				<tr>
-					<td><strong>Прочность материала на разрыв:</strong></td>
-					<td>до 36 кг;</td>
+					<td><strong>Прочность материала на разрыв</strong></td>
+					<td>до 36 кг</td>
 				</tr>
 				<tr>
-					<td><strong>Рабочий диапазон температур:</strong></td>
-					<td>от - 10 до + 40 °C;</td>
+					<td><strong>Рабочий диапазон температур</strong></td>
+					<td>от - 10 до + 40 °C</td>
 				</tr>
                   <?php } else { ?>
                             	<tr>
-					<td width="35%"><strong>Материал батута:</strong></td>
-					<td>ПВХ ламинированная ткань Оксфорд (laminated PVC);</td>
+					<td width="35%"><strong>Материал батута</strong></td>
+					<td>ПВХ ламинированная ткань Оксфорд (laminated PVC)</td>
 				</tr>
 				<tr>
-					<td><strong>Застежки:</strong></td>
-					<td>лавсан;</td>
+					<td><strong>Застежки</strong></td>
+					<td>лавсан</td>
 				</tr>
 				<tr>
-					<td><strong>Предел прочности на растяжение:</strong></td>
-					<td>до 136 кг;</td>
+					<td><strong>Предел прочности на растяжение</strong></td>
+					<td>до 136 кг</td>
 				</tr>
 				<tr>
-					<td><strong>Прочность материала на разрыв:</strong></td>
-					<td>до 14 кг;</td>
+					<td><strong>Прочность материала на разрыв</strong></td>
+					<td>до 14 кг</td>
 				</tr>
 				<tr>
-					<td><strong>Рабочий диапазон температур:</strong></td>
-					<td>от - 10 до + 40 °C;</td>
+					<td><strong>Рабочий диапазон температур</strong></td>
+					<td>от - 10 до + 40 °C</td>
 				</tr>    
                                 
                   <?php } ?>
