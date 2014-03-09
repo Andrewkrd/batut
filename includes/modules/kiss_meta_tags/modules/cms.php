@@ -43,12 +43,11 @@
 		  } 
 		}
 		$base->next();
-		}
-
+		} 
+                KissMT::init()->basename = "articles/";
 		$this->get_value = '';
 		$this->original_get = "";
-		$page_string = (isset($_GET['view'])?'view=' . $_GET['view'] : '' ) . (isset($_GET['page'])?'&page=' . $_GET['page'] : '' );		  	      
-		$this->cache_suffix = (isset($_GET['view'])?'&view=' . $_GET['view'] : '' ) . (isset($_GET['page'])?'&page=' . $_GET['page'] : '' );
+		
 		$this->cache_name = $this->setCacheString( __FILE__, 'listing', 'general' . $this->cache_suffix );
 		if ( false !== $this->retrieve( $this->cache_name ) ) {
 		KissMT::init()->setCanonical( $this->checkCanonical('',$page_string) );
@@ -61,20 +60,26 @@
                 if(strpos($url, "articles")) 
                   $request_url = substr($url, strpos($url, "articles/")+9);
                 else
-                  $request_url = false;
+                  $request_url = "";
 		$Qkeyword->bindValue(':cms_url', $request_url);
 		$Qkeyword->execute();
-					
-		$breadcrumb = KissMT::init()->retrieve( 'breadcrumb' );
 
-		KissMT::init()->setCanonical( $this->checkCanonical('',$page_string) ); 
+                $breadcrumb = KissMT::init()->retrieve( 'breadcrumb' );	
+                
+		$this->cache_suffix =  (isset($_GET['page'])?'&page=' . $_GET['page'] : '' );
+                
+		KissMT::init()->setCanonical( osc_href_link( KissMT::init()->retrieve( 'basename' )) . $request_url ); 
 		
 		KissMT::init()->title = $breadcrumb[0];
 		
-		KissMT::init()->description = $Qkeyword->value('cms_short_text');
+                KissMT::init()->description = $Qkeyword->value('cms_short_text');
+                if(empty(KissMT::init()->description))
+                   KissMT::init()->description = "Статьи и описание батуты Happy Hop. Полезные советы и характеристики";
 		
 		KissMT::init()->keywords = $Qkeyword->value('cms_keyword');
-			
+                
+		if(empty(KissMT::init()->keywords))
+                    KissMT::init()->keywords = "статьи описание батуты Happy Hop советы характеристики";
 
 		
     } // end method
