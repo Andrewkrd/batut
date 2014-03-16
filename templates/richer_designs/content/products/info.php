@@ -159,7 +159,7 @@
                   <?php 
                   if($osC_Product->getCategoryID() == 304) { ?>
                                 <tr>
-					<td width="35%"><strong>Полотно для прыжков</strong></td>
+                                    <td width="35%"><strong>Полотно для прыжков <a href="/articles/konstruktsiya-i-harakteristiki-prujinnyih-batutov-Hasttings#polotno"><img src="/img/info.png" /></a></strong></td>
 					<td>Перматрон (Permatron)</td>
 				</tr>
 				<tr>
