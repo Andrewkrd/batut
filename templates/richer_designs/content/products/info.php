@@ -160,14 +160,14 @@
                   if($osC_Product->getCategoryID() == 304) { ?>
                                 <tr>
                                     <td width="35%"><strong>Полотно для прыжков <a href="/articles/konstruktsiya-i-harakteristiki-prujinnyih-batutov-Hasttings#polotno"><img src="/img/info.png" /></a></strong></td>
-					<td>Перматрон (Permatron)</td>
+					<td>Перматрон (Permatron) <a href="/articles/konstruktsiya-i-harakteristiki-prujinnyih-batutov-Hasttings#permatron"><img src="/img/info.png" /></a></td>
 				</tr>
 				<tr>
-					<td><strong>Материал сетки</strong></td>
-					<td>Терилен (Terylene)</td>
+					<td><strong>Материал сетки <a href="/articles/konstruktsiya-i-harakteristiki-prujinnyih-batutov-Hasttings#setka"><img src="/img/info.png" /></a></strong></td>
+					<td>Терилен (Terylene) <a href="/articles/konstruktsiya-i-harakteristiki-prujinnyih-batutov-Hasttings#terilen"><img src="/img/info.png" /></a></td>
 				</tr>
                                 <tr>
-					<td><strong>Защитный мат</strong></td>
+					<td><strong>Защитный мат <a href="/articles/konstruktsiya-i-harakteristiki-prujinnyih-batutov-Hasttings#mat"><img src="/img/info.png" /></a></strong></td>
 					<td>Полиэстер (Polyester) матовый 0.6мм с износоустойчивой подкладкой</td>
 				</tr>
                   <?}
