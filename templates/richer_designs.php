@@ -6,8 +6,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $osC_Language->getCharacterSet(); ?>" />
-	<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $osC_Language->getCharacterSet(); ?>" />
+<meta charset="utf-8">
 	<?php
 	// Begin Dynamic Meta Tag Code
 	if (file_exists('includes/modules/kiss_meta_tags/kiss_meta_tags.php'))
@@ -16,35 +16,24 @@
 	}
 	// End Dynamic Meta Tag Code
 	?>	
-	<link rel="shortcut icon" href="<?php echo osc_href_link(null, null, 'AUTO', false) . 'favicon.ico'; ?>" />
-	<base href="<?php echo osc_href_link(null, null, 'AUTO', false); ?>" />
-<script src="/js/jquery.js"></script> <!-- jQuery -->
+<link rel="shortcut icon" href="<?php echo osc_href_link(null, null, 'AUTO', false) . 'favicon.ico'; ?>" />
+<base href="<?php echo osc_href_link(null, null, 'AUTO', false); ?>" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="/css/bootstrap.css" rel="stylesheet">
+<link href="/css/flexslider.css" rel="stylesheet">
+<link href="/css/prettyPhoto.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/font-awesome.css"> 
+<link href="/css/sidebar-nav.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/red.css" rel="stylesheet">	
+<link href="/css/bootstrap-responsive.css" rel="stylesheet">
+<script src="/js/jquery.js"></script>
 
 <?php
    if ($osC_Template->hasJavascript()) {
     $osC_Template->getJavascript();
   }
 ?>
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-
-	<link href="/css/bootstrap.css" rel="stylesheet">
-	
-	<link href="/css/flexslider.css" rel="stylesheet">
-
-	<link href="/css/prettyPhoto.css" rel="stylesheet">
-
-	<link rel="stylesheet" href="/css/font-awesome.css"> 
-	
-	<link href="/css/sidebar-nav.css" rel="stylesheet">
-  
-	<link href="/css/style.css" rel="stylesheet">
-
-	<link href="/css/red.css" rel="stylesheet">	
-
-    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
-
-
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -103,7 +92,7 @@
           <!-- Logo. Use class "color" to add color to the text. -->
           <div class="logo">
             <h1><a href="/">Батуты&nbsp;<span class="color bold">Happy Hop</span></a></h1>
-            <p class="meta" style="font-size: 16px;">+7 (861) 244-44-39</p>
+            <p class="meta" style="font-size: 16px;">+7 (861) 290-44-42</p>
           </div>
         </div>
        
@@ -567,7 +556,7 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
                   <hr>
                   <i class="icon-home"></i> &nbsp; г. Краснодар, ул. Сормовская, 34, магазин Жирафик</p>
                   <hr>
-                  <i class="icon-phone"></i> &nbsp; +7 (861) 244-44-39, с 9 до 19, пн-сб.
+                  <i class="icon-phone"></i> &nbsp; +7 (861) 290-44-42, с 9 до 19, пн-сб.
                   <hr>
                   <i class="icon-envelope-alt"></i> &nbsp; <a href="mailto:%20info@batut-krasnodar.ru?subject=Вопрос%20на%20сайте!" style="font-size: 14px">info@batut-krasnodar.ru</a>                 
                 </div>
@@ -636,7 +625,7 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
 
             <hr>
             <!-- Copyright info -->
-            <p class="copy">&copy; 2014 - Интернет-магазин батутов Краснодар | <a href="/">Главная</a> | <a href="/info/dostavka-i-oplata">Доставка и оплата</a> | <a href="/checkout.php">Корзина</a> | <a href="/info/contact">Контакты</a></p>
+            <p class="copy">&copy; 2015 - Интернет-магазин батутов Краснодар | <a href="/">Главная</a> | <a href="/info/dostavka-i-oplata">Доставка и оплата</a> | <a href="/checkout.php">Корзина</a> | <a href="/info/contact">Контакты</a></p>
       </div>
     </div>
   <div class="clearfix"></div>
