@@ -195,7 +195,7 @@
                <li>
                   <a href="/magazin/naduvnoj-batut-s-gorkoj-formula-1-happy-hop-9026"><img src="img/photos/slide9026.jpg" />
                   <div class="flex-caption">
-                   <h3>Батут с горкой cупер Формула 1 - <span class="color">39 990 руб.</span></h3>
+                   <h3>Батут с горкой cупер Формула 1 - <span class="color">47 990 руб.</span></h3>
                    <p>Игровой батут выполнен в форме болида формулы 1! Для будущих гонщиков и любителям автомобилей с открытыми колёсами.</p>
                      <div class="button">
                       <a href="/magazin/naduvnoj-batut-s-gorkoj-formula-1-happy-hop-9026?action=cart_add">Купить прямо сейчас!</a>
@@ -207,7 +207,7 @@
                   <a href="/magazin/detskij-batut-shhenki-dalmatinca-9109"><img src="img/photos/slider2.jpg" /></a>
                   <div class="flex-caption">
                      <!-- Title -->
-                     <h3>ХИТ Продаж! Надувной батут Далматинец - <span class="color">39 500 руб.</span></h3>
+                     <h3>ХИТ Продаж! Надувной батут Далматинец - <span class="color"45 500 руб.</span></h3>
                      <!-- Para -->
                      <p>Уникальный дизайнерский ход! Батут в виде забавных щенков далматинцев, не оставят равнодушными Ваших детей, имеет в составе игровую прыжковую комнату, огороженную защитной сетью и большую надувную горку.</p>
                      <div class="button">
