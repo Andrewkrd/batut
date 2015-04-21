@@ -556,7 +556,7 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
                   <hr>
                   <i class="icon-home"></i> &nbsp; г. Краснодар, ул. Сормовская, 34, магазин Жирафик</p>
                   <hr>
-                  <i class="icon-phone"></i> &nbsp; +7 (861) 290-44-42, с 9 до 19, пн-сб.
+                  <i class="icon-phone"></i> &nbsp; +7 (861) 290-44-42, пн-сб 9 до 19, вс до 18.
                   <hr>
                   <i class="icon-envelope-alt"></i> &nbsp; <a href="mailto:%20info@batut-krasnodar.ru?subject=Вопрос%20на%20сайте!" style="font-size: 14px">info@batut-krasnodar.ru</a>                 
                 </div>
@@ -570,7 +570,7 @@ include('templates/' . $osC_Template->getCode() . '/modules/content/popular_prod
 									<ul>
 										<li class="advantages">
 												<i class="icon-circle-arrow-right"></i>
-												Доставка любого батута по г. Краснодар, Новроссийск, Анапа, Витязево, Геленджик осуществляется бесплатно. Оплата курьеру при получении наличными.</span>
+												Доставка любого батута по г. Краснодар, Новроссийск, Анапа, Витязево, Геленджик, Туапсе, Сочи, Адлер осуществляется бесплатно. Оплата курьеру при получении наличными.</span>
 										</li>
 										<li class="advantages">
 												<i class="icon-circle-arrow-right"></i>
